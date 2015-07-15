@@ -71,7 +71,13 @@ ruby -v
 
   then installing with `bundle install`
      
-2.  Convert thesis from `docx` to `markdown` using pandoc. This extracts images from the thesis to a folder. Links must be modified to be relative. Chapter titles were not rendered with the header markdown, but these will become individual posts so it didn't matter.
+2.  Convert thesis from `docx` to `markdown` using pandoc. This extracts images from the thesis to a [folder](https://github.com/jgm/pandoc/issues/1986). Chapter titles were not rendered with the header markdown, but these will become individual posts so it didn't matter.
 
         pandoc -f docx -t markdown_github -o ~/thesis/_posts/thesis.md --extract-media=~/thesis/images Thesis.docx
         
+
+3.  Build site with `bundle exec jekyll build`
+
+##TODO
+- [ ] Split Chapters into posts
+- [ ] Find missing images
