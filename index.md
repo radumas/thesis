@@ -1,3 +1,7 @@
+---
+title: Analyzing Transit Equity Using Automatically Collected Data
+layout: default
+---
 By inferring individual passengers’ origins, destinations, and transfers using automatically collected transit data, transit providers can obtain and analyze larger volumes of information, with more accuracy, and at more frequent intervals than are available through traditional origin-destination (OD) surveys. Automatic OD inference can be an input into the analysis and reporting of agencies’ social goals, such as the provision of equitable service regardless of race, national origin, or ethnicity, which is federally required in the USA by Title VI of the Civil Rights Act of 1964. The methodology prescribed in the Title VI regulation, however, has not adapted to the opportunity to supplement supply metrics with passenger-centric demand metrics through the availability of OD data. The goal of this thesis is to demonstrate a preliminary methodology to link automatically inferred OD information from regular transit users to the demographic data of public transit commuters from the US Census’s American Community Survey, and to examine variation in passenger-centric metrics such as journey time and speed.
 
 This study infers origins and destinations in the context of the Massachusetts Bay Transportation Authority (MBTA). From a sample month of these data, an example of a passenger-centric analysis is performed by comparing travel times and speeds of trips with origins in areas home to predominantly Black or African American transit commuters to travel times and speeds of trips with origins in areas home to predominantly White transit commuters. Commuters from predominantly Black or African American census tracts are found to have longer travel times and slower speeds relative to commuters from tracts where commuters are predominantly White. Differences are within agency specified margins, but are significant, in particular for journeys involving bus transfers. Short-term solutions such as through-routing of important bus routes and increasing reliability of bus departures at terminals and long-term solutions such as faster, more frequent Diesel Multiple Unit rail service are proposed and evaluated to mitigate these differences.
@@ -156,7 +160,7 @@ The use of boarding and alighting times, as well as the coordinates of origin an
 On the continuum (Figure 21) from open to closed AFC payment systems, an open system collects the least amount of information about user behavior: collecting a fee and recording a timestamp only when users enter the system. Examples of this type of system include transit systems in Boston, New York, and Montreal. At the other end of this continuum are closed payment systems, typically with distance-based and/or time-based fares. The calculation of each customer’s fare requires an exit transaction, thus recording the destination location and time such as in Singapore
 (Robinson, Narayanan, Toh, & Pereira, 2014) or Seoul. Between these two are systems that include a combination of open and closed modes, typically an open bus system and a closed rail system such as in London, San Francisco, and Washington, D.C.
 
-![](../images/media/image1.png)
+![](images/media/image1.png)
 
 <span id="_Ref404252507" class="anchor"><span id="_Toc405489600" class="anchor"><span id="_Toc415253080" class="anchor"><span id="_Toc423368604" class="anchor"></span></span></span></span>Figure 21 Open-Closed AFC Payment Continuum
 
@@ -166,7 +170,7 @@ Figure 22 shows the generalized flow of the AFC, AVL, and schedule (stop and sta
 
 In legacy data collection systems, it is therefore necessary to synthesize automatically collected data prior to origin inference. First one must determine the “pattern,” or the sequence of stops served in a given route and direction, that is being performed by the vehicle. This is done in order to filter the set of stops to which the AVL system GPS records may be matched in order to infer the boarding or alighting stops. By also assigning a pattern to customers, one limits the set of stop events at which the customer can board or alight. This assumes that customers would not stay on a vehicle to travel on its next trip after a terminus. If a set of vehicle-trip start and end times exists then records can be matched to trips temporally, though this requires a reliable time when a vehicle transitions to a subsequent trip.
 
-![](../images/media/image2.png)
+![](images/media/image2.png)
 
 <span id="_Ref404251367" class="anchor"><span id="_Toc405489601" class="anchor"><span id="_Toc415253081" class="anchor"><span id="_Toc423368605" class="anchor"></span></span></span></span>Figure 22 Generalized Data Flow for OD Inference, Bolded Boxes Represent Processes, Others Represent Data Sources
 
@@ -192,7 +196,7 @@ The inference of stop-level travel information necessitates greater data accurac
 
 In order to generalize data processing, and reduce the variety of internal data sources to be used, data published in the General Transit Feed Specification (GTFS)[3] and provided online by the MBTA[4] (and many other transit agencies) were used wherever possible. This yielded the scheduled stop times for the modes to be processed, as well as spatial coordinates of these locations.
 
-![](../images/media/image3.png)
+![](images/media/image3.png)
 
 <span id="_Ref414974064" class="anchor"><span id="_Toc415253082" class="anchor"><span id="_Toc423368606" class="anchor"></span></span></span>Figure 23 MBTA Subway and Key Bus Routes Schematic<span id="_Ref404953835" class="anchor"></span>
 
@@ -200,11 +204,11 @@ In order to generalize data processing, and reduce the variety of internal data 
 
 The MBTA’s AFC system collects fares on bus, LRT, and subway. Commuter rail fares are currently validated by conductors and are not recorded automatically, however passes exist that can be used on both commuter rail and the rapid transit network. The AFC system records detailed transaction information for cash, magnetic-stripe paper tickets (Charlie Tickets), and RFID-equipped smart cards (Charlie Cards). Since the AFC table does not contain all of the necessary fields for OD inference, some pre-processing was required. This includes a farebox clock correction algorithm which will be discussed further in the Vehicle Farebox Clock Correction section below. Figure 25 shows the entity relational diagram for this preprocessing with the output table on the right (see Figure 24 for an explanation of the Crow’s Foot notation relationships between fields in different table).
 
-![](../images/media/image4.png)
+![](images/media/image4.png)
 
 <span id="_Ref415048182" class="anchor"><span id="_Toc415253083" class="anchor"><span id="_Toc423368607" class="anchor"></span></span></span>Figure 24 Entity Relationship Legend
 
-![](../images/media/image5.png)
+![](images/media/image5.png)
 
 <span id="_Ref415050744" class="anchor"><span id="_Toc415253084" class="anchor"><span id="_Toc423368608" class="anchor"></span></span></span>Figure 25 AFC Preprocessing Relational Diagram
 
@@ -270,7 +274,7 @@ After running destination inference, it became apparent that vehicle farebox clo
 Further investigation found that clocks are recalibrated when vehicles are in the garage when the farebox communicates with a central server during refueling or cash extraction. In normal operations the clocks will drift, a thorough analysis of all fareboxes revealing that most have clocks drifting by roughly seven seconds per day
 (Gordon, 2014). Such an error is insignificant for most purposes, but if uncorrected the clock error can lead to inaccuracies in origin and destination inference. This is especially true for transactions occurring at the beginning of a vehicle trip, since, due to clock drift, these will be assigned to the previous trip as in Figure 26.
 
-![](../images/media/image6.png)
+![](images/media/image6.png)
 
 <span id="_Ref415236165" class="anchor"><span id="_Toc415253085" class="anchor"><span id="_Toc423368609" class="anchor"></span></span></span>Figure 26 Boarding and Alighting Comparison: Uncorrected AFC timestamps
 
@@ -292,7 +296,7 @@ To address the issue of clock drift, the timestamps of AFC records are corrected
 
 This process was automated to correct all transactions. Figure 27 shows the result of this correction for the example appearing Figure 26. The reader can see that the orange and yellow dotted lines, representing the total boardings estimated using APC and AFC respectively, are much more closely aligned
 
-![](../images/media/image7.png)
+![](images/media/image7.png)
 
 <span id="_Ref415237492" class="anchor"><span id="_Toc405489604" class="anchor"><span id="_Toc415253086" class="anchor"><span id="_Toc423368610" class="anchor"></span></span></span></span>Figure 27 Boarding and Alighting Comparison: Corrected AFC timestamps
 
@@ -323,7 +327,7 @@ There are fewer situations in which no data are recorded for external announceme
 
 1.  The GTFS stop arrivals table includes the stop pattern for every trip. A subset of this table is loaded into a temporary table with the cumulative distance for each scheduled stop calculated based on the either internally measured bus stop distances or distances calculated using the GIS extension. This table is joined to a PostGIS table of the geographic point objects for every bus stop based on stop ID. The locations of bus garages, bus garages with special identifiers populating the route and trip fields are added to this table in order to identify when buses are closer to a garage than to a stop on their route. To improve performance, a spatial index is created and analyzed on the positions of the stops.
 
-![](../images/media/image8.png)
+![](images/media/image8.png)
 
 <span id="_Ref415051404" class="anchor"><span id="_Toc415253087" class="anchor"><span id="_Toc423368611" class="anchor"></span></span></span>Figure 28 Bus Announcement Entity Relationship Diagram for Processing Stop Events
 
@@ -362,7 +366,7 @@ For modes in which customers have access to a network, rather than a single bus 
 
 Heavy rail data come in the form of track circuit records on the three heavy rail lines, for which the processing algorithm is describe in the following paragraphs. Figure 29 below shows the different tables used in this processing, as well as the output of the processing algorithm.
 
-![](../images/media/image9.png)
+![](images/media/image9.png)
 
 <span id="_Ref405023673" class="anchor"><span id="_Toc405489606" class="anchor"><span id="_Toc415253088" class="anchor"><span id="_Toc423368612" class="anchor"></span></span></span></span>Figure 29 Track Processing Relational Diagram and Output Data
 
@@ -387,7 +391,7 @@ The sensitivity of destination-inference rates to user-specified parameters was 
 
 Unlike London’s closed rail system, which yields the times and locations of passenger origins and destinations, Boston’s underground rapid transit network, which allows behind-the-gate transfers, is an open fare payment system. Destination locations and times must therefore be inferred for Boston’s rapid transit lines (heavy rail, light rail, and bus rapid transit) which offer transfers underground. The methodology developed is described below.
 
-![](../images/media/image10.png)
+![](images/media/image10.png)
 
 <span id="_Ref405036095" class="anchor"><span id="_Toc415253089" class="anchor"><span id="_Toc423368613" class="anchor"></span></span></span>Figure 210 Comparing Sensitivity to Destination Inference Distance for Bus
 
@@ -436,7 +440,7 @@ The arrival-time inference algorithm is executed as follows (see Figure 211):
 
 Arrival inference was initially tested using GTFS scheduled data, and then a hybrid of track data (where available) and schedule data was used. The number of successfully inferred rail destinations increased by 4,300 (0.9%) using track circuit data versus simply using schedule data because these customers were inferred to arrive in time to board their next bus. Many of these passenger trips were then inferred to have been linked to the customer’s previous or subsequent bus or rail trips.
 
-![](../images/media/image11.png)
+![](images/media/image11.png)
 
 <span id="_Ref405034235" class="anchor"><span id="_Toc405489607" class="anchor"><span id="_Toc415253090" class="anchor"><span id="_Toc423368614" class="anchor"></span></span></span></span>Figure 211 Arrival Time Inference Flow Chart
 
@@ -816,7 +820,7 @@ After identifying causes, potential solutions can be proposed. This concluding s
 
 ### <span id="_Toc419415978" class="anchor"><span id="_Ref421272012" class="anchor"><span id="_Ref421614400" class="anchor"><span id="_Toc423368716" class="anchor"></span></span></span></span>Most Recent ACS
 
-The analysis below uses the 5-year estimates for 2013, the most recent year for which data is available. ACS data is available in PUMS (see section 3.4 for a description). Any PUMA which intersects an MBTA bus or rapid transit route was used (Figure 31). Only responses for people who commuted by bus, streetcar, and heavy rail commuters were used.![](../images/media/image12.png)
+The analysis below uses the 5-year estimates for 2013, the most recent year for which data is available. ACS data is available in PUMS (see section 3.4 for a description). Any PUMA which intersects an MBTA bus or rapid transit route was used (Figure 31). Only responses for people who commuted by bus, streetcar, and heavy rail commuters were used.![](images/media/image12.png)
 
 <span id="_Ref413190582" class="anchor"><span id="_Toc413249442" class="anchor"><span id="_Toc419415980" class="anchor"><span id="_Toc423368616" class="anchor"></span></span></span></span>Figure 31 PUMAs which intersect MBTA Rapid Transit or Bus
 
@@ -836,11 +840,11 @@ Table 32 shows the average commute time for users who travelled by public transi
 
 The distribution of these travel times is important, and the distributions for Asian and Black or African American commuters are shown in Figure 32 and Figure 33, with the White Alone population as reference. The graphs are smoothed using a kernel density because respondents tend to report their travel times in 10 or 15 minute increments. Given the discrete nature of responses, and their clustering in 15 minute increments, smoothing was applied to the graphs. The Asian distribution is similar to the White Alone one except for a shift to the right, with increased proportions of trips taking 45, 60, and 90 minutes. The Black or African American distribution shows a slightly greater proportion of commuters with really short travel times, but mostly the distribution also shows a substantial proportion of lengthier commutes, in particular above 60 and 90 minutes.
 
-![](../images/media/image13.png)
+![](images/media/image13.png)
 
 <span id="_Ref419367489" class="anchor"><span id="_Toc413249446" class="anchor"><span id="_Toc419415981" class="anchor"><span id="_Toc423368617" class="anchor"></span></span></span></span>Figure 32 Journey to Work Time Distribution for Asian (Source: ACS 5-year 2013)
 
-![](../images/media/image14.png)
+![](images/media/image14.png)
 
 <span id="_Ref412753172" class="anchor"><span id="_Toc413249447" class="anchor"><span id="_Toc419415982" class="anchor"><span id="_Toc423368618" class="anchor"></span></span></span></span>Figure 33 Journey to Work Time Distribution for Black or African American (Source: ACS 5-year 2013)
 
@@ -851,7 +855,7 @@ Since the Black-White differential is the highest, it will be the focus of this 
 
 This chapter has detailed a history of Federal requirements for equity analysis of transit and transportation in the USA. Examples of the state of the practice and criticisms of the state of the practice found in the academic literature were presented. The use of inferred origins and destinations to generate passenger-centric metrics addresses the critiques of overly aggregate supply-derived metrics. These data provide more information than survey data from the Journey to Work section of the Census Bureau administered American Community Survey, allowing the analyst to identify solutions to mitigate observed differences in travel time. Subsequent chapters will present an example of an analysis of the spatial variation of travel time using inferred OD data. Chapter 4 discusses the necessary processing to filter a comparable sample of regular commuters from AFC, and the inference required to link home locations with public transit demographics aggregated by census tract. Chapter 5 presents the results of an analysis of travel times of users from areas with predominantly Black or African American public transit commuters compared to areas with predominantly White public transit commuters.
 
-![](../images/media/image15.png)
+![](images/media/image15.png)
 
 <span id="_Toc423368619" class="anchor"></span>Figure 34 Public Transit Commuters by Race: Black and White
 
@@ -912,7 +916,7 @@ Since the goal of the analysis is to compare the transit experience of commuters
 
 In order to link demographics to a user’s fare card, the users should reside within a specified buffer around their origins. Thus customers who take other modes such as commuter rail, or car to access rapid transit must be excluded. This will be discussed in depth in section 4.3 which describes the process of determining home location.
 
-![](../images/media/image16.png)
+![](images/media/image16.png)
 
 <span id="_Ref406846500" class="anchor"><span id="_Toc408177958" class="anchor"><span id="_Toc423368622" class="anchor"></span></span></span>Figure 43 Destination Inference Rates by Active Weekday<span id="_Toc408177984" class="anchor"></span>
 
@@ -951,7 +955,7 @@ One must first determine which activity can be used to infer the location of use
 
 The current state of the practice for equity analysis by the CTPS is to draw buffers around every stop and assign the characteristics of the surrounding areas to stops. This aggregates a lot of variety in census tracts around stops. Figure 46 below shows the distribution of the number of census tracts within a 1 km buffer around stops, and rail stations. It may be possible to infer more precisely the area from which users originate through processing their use of transit over time.
 
-![](../images/media/image17.png)
+![](images/media/image17.png)
 
 <span id="_Ref407722448" class="anchor"><span id="_Toc408177961" class="anchor"><span id="_Toc423368625" class="anchor"></span></span></span>Figure 46 Distribution of Number of Census Tracts Intersecting 1km Buffers around MBTA Stops and Stations
 
@@ -973,7 +977,7 @@ Assuming that users will not walk further from their homes than the maximum dest
 
 The hierarchical clustering algorithm was run on weekday ridership for April 2014. Of 494 thousand users, 414 thousand had first origins that could be clustered. The rest exclusively used Green Line or Mattapan as first origins. Figure 47 shows the distribution of the number of clusters per user.
 
-![](../images/media/image18.png)
+![](images/media/image18.png)
 
 <span id="_Ref400367287" class="anchor"><span id="_Toc408177962" class="anchor"><span id="_Toc423368626" class="anchor"></span></span></span>Figure 47 Distribution of Number of Clusters per User
 
@@ -1070,7 +1074,7 @@ Voronoi polygons represent regions of space that are closer to a point than any 
 
 Voronoi polygons were generated for every bus pattern, a unique combination of route, direction and sequence of stops, and for every rapid transit line.
 
-![](../images/media/image19.png)
+![](images/media/image19.png)
 
 <span id="_Ref408157223" class="anchor"><span id="_Toc408177965" class="anchor"><span id="_Toc423368629" class="anchor"></span></span></span>Figure 410 Voronoi Polygons Created for the Inbound Direction of Bus Route 01 (Basemap licensed under CC-By-SA from OpenStreetMap)
 
@@ -1078,21 +1082,21 @@ The home area is the area of the Voronoi polygons of the first origins used by a
 
 ### Joining to Census Tracts
 
-The home areas are intersected geometrically with census tracts, the smallest geographic unit for which the demographic breakdown of transit riders is available from the ACS. Tracts where no transit riders live, such as parks, are subtracted from home areas. Weights are assigned for the probability of each user \(j\) residing in tract \(i\) according to Equation 41 below
+The home areas are intersected geometrically with census tracts, the smallest geographic unit for which the demographic breakdown of transit riders is available from the ACS. Tracts where no transit riders live, such as parks, are subtracted from home areas. Weights are assigned for the probability of each user _j_ residing in tract _i_ according to Equation 41 below
 
 <span id="_Ref421795195" class="anchor"></span>Equation 41 Weighing a User's Probability of Residing in a Given Tract
-
+```
 \[p_{\text{ij}} = \frac{A_{j} \cap A_{i}}{A_{j}}\text{\ \ }\]
 
 Where \({(A}_{j} \cap A_{i})\) is the area of the intersection of user *j*’s home area and census tract *i*
-
+```
 These weights will be used to aggregate statistics from user journeys in 4.4 and the spatial analysis of transit effectiveness in Chapter 5 below.
 
 ### Example
 
 Taking a particular user as an example. This person started their weekdays at 6 distinct bus stops during April for a total of 21 active travel days. Figure 411 shows these stops mapped with the stop markers scaled by the number days the used started at each one.
 
-![](../images/media/image20.png)
+![](images/media/image20.png)
 
 <span id="_Ref400461935" class="anchor"><span id="_Toc406076950" class="anchor"><span id="_Toc423368630" class="anchor"></span></span></span>Figure 411 Initial distribution of stops, scaled by number of days started at that stop
 
@@ -1100,7 +1104,7 @@ The map also features the bus routes used to make the first trips of the day: th
 
 The hierarchical clustering algorithm groups together stops which are close together and within 2km of each other. Figure 412 shows the results of hierarchical clustering for this example user: where the stops to the northwest are clustered separately from the stop to the southeast (now blue). Since the user started more weekdays in the month from stops in the beige cluster, these are assumed to be the stops closest to that user’s home, and within walking distance.
 
-![](../images/media/image21.png)
+![](images/media/image21.png)
 
 <span id="_Ref400462825" class="anchor"><span id="_Toc406076951" class="anchor"><span id="_Toc423368631" class="anchor"></span></span></span>Figure 412 Distribution of stops post clustering, with 1km buffer around new centroid
 
@@ -1108,13 +1112,13 @@ The weighted centroid for this cluster is represented by the star. This point is
 
 But it should also be possible to use information about what stops the user did not use to better infer where there home location may be. The Voronoi polygons for the stops of each route the user boarded at represent the catchment area for each. By selecting only the polygons for the stops which were used, one excludes the catchment areas for the stops not used from the user’s probable residence. Figure 413 shows the catchment areas for the stops from which the user began their day. Assuming the user is equally likely to reside in the area representing the union of these areas, then the percentages represent the probability the user lives in any given polygon. This example shows that this will weight termini more heavily, since terminal polygons, like the stop on the left, will be much larger than intermediate stops.
 
-![](../images/media/image22.png)
+![](images/media/image22.png)
 
 <span id="_Ref415572148" class="anchor"><span id="_Toc406076952" class="anchor"><span id="_Toc423368632" class="anchor"></span></span></span>Figure 413 Clustered stops and home area in green
 
 Taking the intersection of the Voronoi polygons with census tracts produces Figure 414, where now the percentages reveal the probability of the user residing in any given census tract outlined in red. Attributes from the user’s observed transit journeys can now be aggregated by census tract using those probabilities as weights.
 
-![](../images/media/image23.png)
+![](images/media/image23.png)
 
 <span id="_Ref419288936" class="anchor"><span id="_Toc423368633" class="anchor"></span></span>Figure 414 Home area intersected with Census Tracts
 
@@ -1129,25 +1133,19 @@ This method was validated using data from the U.S. Census bureay’s 2013 5-year
 
 <span id="_Ref421795227" class="anchor"></span>Equation 42 Estimating number of commuters per tract
 
-\[C_{i} = \sum_{j = 1}^{J}{C_{\text{ij}} = \sum_{j = 1}^{J}\frac{{(A}_{j} \cap A_{i})}{\sum_{i = 1}^{I}{{(A}_{j} \cap A_{i})}}}\]
-
 Where:
-
-\({(A}_{j} \cap A_{i})\) is the area of the intersection of user *j*’s home area and census tract *i*
-
-\(\sum_{i = 1}^{I}{{(A}_{j} \cap A_{i})}\ \)is the total area of user *j*’s home area which is present within census tracts, and therefore
-
-\(C_{\text{ij}}\ \)represents the probability that user *j* resides within tract *i*
-
+```
+represents the probability that user *j* resides within tract *i*
+```
 The map in **Error! Reference source not found.** shows the result of this operation. There is a high density of users along the heavy rail lines, and very low density in the outer suburbs.
 
 The map in **Error! Reference source not found.** shows the comparison between the estimated number of commuters from AFC data and the estimates from the ACS. The beige cells represent the AFC estimate being within the error range for the ACS estimates. In the suburbs the AFC method tends to undercount with respect to ACS, likely due to the ACS including commuter rail users in quantifying public transit commuters. The AFC estimates tend to over count the users in the tracts along the heavy rail corridors. The AFC estimates will in general tend to be high since there are 328 thousand farecards to the ACS’s estimated 240 thousand commuters (which includes commuter rail users).
 
-![](../images/media/image24.png)
+![](images/media/image24.png)
 
 <span id="_Toc423368634" class="anchor"></span>Figure 415 Map of Commuter Density from AFC Estimate
 
-![](../images/media/image25.png)
+![](images/media/image25.png)
 
 <span id="_Toc423368635" class="anchor"></span>Figure 416 Map of Ratio of AFC: ACS Estimated Commuters
 
@@ -1193,11 +1191,11 @@ Figure 52 shows the spatial distribution of the proportion of public transit com
 
 However the map below doesn’t reflect absolute numbers of commuters. The dot map in Figure 53 below represent 10 commuters by one dot randomly placed within the census tract boundary. Thus intensity can be shown by the concentration of the dot color, while avoiding the issue of larger tracts on the periphery being more noticeable due to their size rather than their intensity. The geographic separation of Black and White commuters is still noticeable, in particular south west of downtown Boston and the drop in the number of commuters outside of the core served by rapid transit is now noticeable.
 
-![](../images/media/image26.png)
+![](images/media/image26.png)
 
 <span id="_Ref409361707" class="anchor"><span id="_Toc408587169" class="anchor"><span id="_Toc419766908" class="anchor"><span id="_Toc423368637" class="anchor"></span></span></span></span>Figure 52 Proportion of Public Transit Users who are White Alone, not Hispanic or Latino (ACS 2013
 
-![](../images/media/image15.png)
+![](images/media/image15.png)
 
 <span id="_Ref409362620" class="anchor"><span id="_Toc419766909" class="anchor"><span id="_Toc423368638" class="anchor"></span></span></span>Figure 53 Dot Map of Public Transit Commuters Identifying as White or as Black and African American (ACS 2013)
 
@@ -1216,11 +1214,11 @@ This section will examine journey characteristics for the entire network to set 
 
 Waiting times are not recorded in the ODX output when a bus stage is the first stage of a user’s journey since payment occurs after waiting at the stop. For rail journeys, fare payment occurs before waiting for a vehicle, and for multi-stage journeys, the transfer time between the arrival of one stage and the departure of the next includes waiting time at the stop. Waiting time is inferred for bus stages in section 5.4.1. Given the assumptions required in its inference, results will first be compared by disaggregating statistics by mode, such that journey times with recorded waiting times are not compared with journey times lacking waiting time.
 
-![](../images/media/image27.png)
+![](images/media/image27.png)
 
 <span id="_Ref408489990" class="anchor"><span id="_Toc408587171" class="anchor"><span id="_Toc419766910" class="anchor"><span id="_Toc423368639" class="anchor"></span></span></span></span>Figure 54 Map of Farecard Density by Census Tract
 
-![](../images/media/image28.png)
+![](images/media/image28.png)
 
 <span id="_Ref417399934" class="anchor"><span id="_Toc408587174" class="anchor"><span id="_Toc419766911" class="anchor"><span id="_Toc423368640" class="anchor"></span></span></span></span>Figure 55 Destination Inference Rate by Census Tract
 
@@ -1246,7 +1244,7 @@ As one would expect, bus is used for shorter journeys than rail. Rail alone is u
 
 The map in Figure 59 below shows the spatial distribution of average journey times by tract. Since travel time is only inferred for journeys that start at a gated station, there are artifacts along the surface portion of the Green Line because journeys on that segment are not used. Besides these, the pattern resembles what one might expect from a largely radial system: shorter travel times in the center, growing longer as the distance from the center increases. There exist a few outliers outside the center which are likely due to there being few trips originating from those tracts.
 
-![](../images/media/image29.png)
+![](images/media/image29.png)
 
 <span id="_Ref409469945" class="anchor"><span id="_Toc423368644" class="anchor"></span></span>Figure 59 Map of Average Journey Time by Census Tract
 
@@ -1282,7 +1280,7 @@ Though the FTA has explicit guidance on how to select thresholds,
 Karner & Niemeier
 (2013) recommend that equity analyses should examine sensitivity of the results to the threshold used. Prior to selecting a threshold to use for an in-depth analysis of trip characteristics, this section examines how varying the threshold affects the demographics and the performance metrics of the resulting samples. The demographics and performance metrics of the sample are calculated for a sample formed by using each integer threshold between 0% and 100% for the White Alone and Black or African American demographics.
 
-![](../images/media/image30.png)
+![](images/media/image30.png)
 
 <span id="_Ref416585136" class="anchor"><span id="_Toc423368645" class="anchor"></span></span>Figure 510 Census tracts above FTA Black or White commuter threshold
 
@@ -1291,7 +1289,7 @@ Karner & Niemeier
 In selecting a threshold one wants to ensure that the sample has a high concentration of that demographic (\(P_{\text{di}}\), see Equation 51) while ensuring a good representation of the target demographic in the threshold (\(R_{\text{di}}\), see Equation 52). When selecting census tracts, as one increases the threshold for that target demographic, the proportion within the sample increases but as the sample size decreases so does the number of individuals matching the target demographic.
 
 <span id="_Ref418435827" class="anchor"></span>Equation 51 Concentration of target demographic within a sample
-
+```
 \[C_{\text{di}} = \frac{\left( \text{Number\ of\ Commuters} \right)_{\text{di}}}{\left( \text{Number\ of\ Commuters} \right)_{i}}\]
 
 \[\backslash n\]
@@ -1301,7 +1299,7 @@ In selecting a threshold one wants to ensure that the sample has a high concentr
 Where:
 
 \[{d:\ target\ demographic,\ ex:White\ Alone\ or\ Black\ or\ African\ American\ \backslash n}{i:sample\ of\ commuters\ meeting\ the\ given\ threshold}\]
-
+```
 The FTA guidance requires thresholds to be based on area averages, however these can be overly restrictive or overly permissive depending on the circumstance. Figure 511 and Figure 512 show how the representation of Black or African American commuters, and White Alone commuters varies by varying the threshold of Black or White commuters respectively. In order to be mutually exclusive, each sample excludes tracts exceeding the area proportion for the other demographic. For:
 
 -   White Alone tracts: Any tract exceeding 15.3% Black or African American commuters is excluded
@@ -1310,13 +1308,13 @@ The FTA guidance requires thresholds to be based on area averages, however these
 
 For example, the tracts in Figure 511 exclude tracts exceeding the area average proportion of White Alone commuters. Selecting the most permissive threshold of 0% still results in 12% of Black or African American commuters being excluded from the sample (the green line). At the FTA threshold of 15.3% Black (the black vertical dashed line), 76% of Black commuters are included in the sample, but they are not a majority of commuters in the sample (the magenta line). By selecting a threshold between approximately 20% and 50%, the sample would ensure that Black or African Americans are the majority in the sample, while the majority of Black or African Americans are included in the sample. The reference population of White Alone commuters would be between 25% and below 10% (the blue line).
 
-![](../images/media/image31.png)
+![](images/media/image31.png)
 
 <span id="_Ref418105984" class="anchor"><span id="_Toc419766915" class="anchor"><span id="_Toc423368646" class="anchor"></span></span></span>Figure 511 Sample Demographics as Black Threshold Varies
 
 Figure 512 shows that White Alone commuters make up a majority of commuters in tracts that have a below average proportion of Black or African American commuters. Above the FTA threshold (the black dotted line), the sample has a majority White Alone population (78%) while including 73% of White Alone commuters. The sample would exclude a majority of White Alone commuters when using a threshold above 75%. Thus the FTA threshold would be inappropriate for selecting a sample of tracts housing Black or African American commuters, but would be reasonable for sampling the White Alone population.
 
-![](../images/media/image32.png)
+![](images/media/image32.png)
 
 <span id="_Ref418105985" class="anchor"><span id="_Toc419766916" class="anchor"><span id="_Toc423368647" class="anchor"></span></span></span>Figure 512 Sample Demographics as White Threshold Varies
 
@@ -1332,7 +1330,7 @@ Figure 514 shows how the straight-line speed for each mode varies with the selec
 
 Above the 70% threshold for Black or African American tracts and the 80% threshold for White Alone ones, the speed varies considerably as the sample shrinks to below 25% and 35% of the respective demographics.
 
-![](../images/media/image33.png)
+![](images/media/image33.png)
 
 <span id="_Ref418622412" class="anchor"><span id="_Toc419766918" class="anchor"><span id="_Toc423368649" class="anchor"></span></span></span>Figure 514 Average Straight-line Speed by Mode and by Varying Thresholds
 
@@ -1342,17 +1340,17 @@ Figure 515 shows that travel times tend to increase as the concentration of Blac
 
 This increasing in journey times for commuters in Black or African American tracts is not due to these commuters living farther away as the concentration increases, Figure 516 shows that average journey distances do not increase as the threshold increases. Moreover, as one might expect due to their location, average journey distances are slightly shorter than for commuters from White Alone tracts. This also disproves the spatial mismatch theory that destinations are located further for Black or African American residents than for White ones.
 
-![](../images/media/image34.png)
+![](images/media/image34.png)
 
 <span id="_Ref418693671" class="anchor"><span id="_Toc419766919" class="anchor"><span id="_Toc423368650" class="anchor"></span></span></span>Figure 515 Average Journey Time by Mode for Varying Thresholds
 
-![](../images/media/image35.png)
+![](images/media/image35.png)
 
 <span id="_Ref418695030" class="anchor"><span id="_Toc419766920" class="anchor"><span id="_Toc423368651" class="anchor"></span></span></span>Figure 516 Average Straight-line Distance for Varying Thresholds
 
 Despite no increase in journey distance as the concentration of Black or African American commuters increases, the number of transfers required to complete these journeys increases. The proportion of trips requiring at least one transfer increases from over 35% to 55% at a Black proportion of 70% (Figure 517). Over the same range the proportion of trips requiring at least two transfers increases by over 5%. Meanwhile the proportion of trips requiring more than 1 transfer for commuters from White Alone tracts barely goes above 35%. This indicates that the network is not currently configured to serve trips from Black or African American tracts very well, since shorter distances should not require more transfers.
 
-![](../images/media/image36.png)
+![](images/media/image36.png)
 
 <span id="_Ref418711563" class="anchor"><span id="_Toc419766921" class="anchor"><span id="_Toc423368652" class="anchor"></span></span></span>Figure 517 Number of Segments Required per Trip for Varying Thresholds
 
@@ -1380,7 +1378,7 @@ Table 53 shows the demographics for the two samples used in this section with th
 
 Figure 518 shows a map of the tracts. The Black tracts are close to the core, and principally in the region between the southwest ends of the Orange and Red Lines. The White tracts within the core are downtown along the Orange and Red Lines or along the branches of the Green Line. Otherwise they are out at the termini of the Orange and Red Lines, and occupy most of the suburbs. One would expect the White Alone trips to be further, and bus trips to tend to be on express commuter buses.
 
-![](../images/media/image37.png)
+![](images/media/image37.png)
 
 <span id="_Ref418717580" class="anchor"><span id="_Toc423368653" class="anchor"></span></span>Figure 518 Census Tracts above Black or White Commuter Thresholds (40% Black threshold, 70% White threshold)
 
@@ -1395,7 +1393,7 @@ Since fare payment on bus trips occurs after waiting for a vehicle to arrive, wa
 In this section the waiting time was estimated for any bus stage at the beginning of a journey. For service with scheduled headways less than 10 minutes, passenger arrival times were assumed to be uniform and random, leading to waiting time estimates of Equation 53, or half the preceding headway. For the first bus trip of the day, there is no previous trip, the following headway is used as an estimate.
 
 <span id="_Ref419655711" class="anchor"></span>Equation 53 Waiting Time for High-frequency Service
-
+```
 \[WT_{\text{is}} = \frac{1}{2}(AT_{\text{is}} - AT_{i - 1,s})\]
 
 Where:
@@ -1403,7 +1401,7 @@ Where:
 \(WT:\) Waiting Time for a passenger boarding at stop \(s\) on trip \(i\)
 
 \(\text{AT}\): Arrival Time for trip \(i\) at stops \(s\)
-
+```
 For scheduled service, with scheduled headways greater than 10 minutes, two methods were used to have bounded estimates of the waiting time. First, wait times were assumed to follow a similar pattern to high frequency service, of a uniform arrival rate resulting in a wait time of half the headway. This ignores that passengers may want to look up the schedule for lower frequency service. In the second assumption, passengers were assumed to arrive at the stop at a constant average time before the scheduled arrival time of five minutes, and then experience waiting time equivalent to the schedule adherence. This assumes that none of the users have access to real-time information, or that users don’t modify their “buffer time” before the scheduled departure based on previous experience of schedule adherence on that route. Nor does this penalize adequately the consequences of buses arriving at a stop early, which will result in some proportion of riders missing a trip and having to wait for the subsequent bus.
 
 Table 54 shows the results for the two samples. The half-headway method leads to higher wait times for commuters from White Tracts, as it estimates waiting from longer headways much more severely. With the second method, the average wait times have one second of difference in favor of commuters from Black tracts. These commuters benefit from a slightly larger proportion of their bus trips starting on high frequency routes. For the rest of this section the lower wait time estimates will be used.
@@ -1454,11 +1452,11 @@ Due to the assumptions required for inferring waiting times for bus stages, and 
 
 The difference in travel speeds presented in Table 55 is partially due to users from Black or African American tracts making more transfers to get to their destination. Figure 520 shows that for a given distance, journeys from Black or African American tracts tend to require more transfers than those from White Alone tracts. Below that figure, Figure 521 shows the distribution of straight-line distances to indicate the relative frequency of trips being made of a given distance.
 
-Of the 42% of trips from Black or African American tracts which are made between distances of 5 and 10 km, 56% of them require one or more transfers, compared to only 42% of trips from White Alone tracts over that same distance range. For journeys between 10 and 20 km, 9% of trips from Black or African American tracts, 81% of trips require more than one transfer, compared to only 53% of trips from White Alone tracts. This relative inaccessibility of the network, when, as the map in Figure 518 shows, Black tracts are mostly centrally located, suggests that the network has not been configured for the needs of Black or African American commuters. An increased number of transfers decreases trip reliability due to the possibility of a missed connection, and increases perceived travel time due to increased wait time.![](../images/media/image38.png)
+Of the 42% of trips from Black or African American tracts which are made between distances of 5 and 10 km, 56% of them require one or more transfers, compared to only 42% of trips from White Alone tracts over that same distance range. For journeys between 10 and 20 km, 9% of trips from Black or African American tracts, 81% of trips require more than one transfer, compared to only 53% of trips from White Alone tracts. This relative inaccessibility of the network, when, as the map in Figure 518 shows, Black tracts are mostly centrally located, suggests that the network has not been configured for the needs of Black or African American commuters. An increased number of transfers decreases trip reliability due to the possibility of a missed connection, and increases perceived travel time due to increased wait time.![](images/media/image38.png)
 
 <span id="_Ref421797187" class="anchor"><span id="_Ref421796005" class="anchor"><span id="_Toc423368655" class="anchor"></span></span></span>Figure 520 Distribution of Segments Required for Trips by Distance and Threshold
 
-![](../images/media/image39.png)
+![](images/media/image39.png)
 
 <span id="_Ref418722367" class="anchor"><span id="_Toc419766923" class="anchor"><span id="_Toc423368656" class="anchor"></span></span></span>Figure 521 Distribution of Straight-Line Distance by Threshold
 
@@ -1495,15 +1493,15 @@ Speeds tend to increase with distance, and, for reasons identified above, speeds
 
 Between 3 and 4km, the location of the peak in White Alone bus trips, the average speed for White Alone trips is actually 0.7 km/hr slower than for Black or African American trips. However, this is mitigated by speeds below 3 km being faster for White Alone trips. Aggregating bus trips from 500 to 4000m, which include 69% of Black or African American bus trips and 65% of White Alone ones, shows no difference in average speed. This reveals the importance of examining distributions, since the speed difference is null in the range where the bulk of bus trips are made, but the difference is substantial over medium distances.
 
-![](../images/media/image40.png)
+![](images/media/image40.png)
 
 <span id="_Ref418816240" class="anchor"><span id="_Toc419766924" class="anchor"><span id="_Toc423368657" class="anchor"></span></span></span>Figure 522 Average Straight-line Speeds by Journey Distance and by Mode
 
-![](../images/media/image41.png)
+![](images/media/image41.png)
 
 <span id="_Ref416818144" class="anchor"><span id="_Toc419766925" class="anchor"><span id="_Toc423368658" class="anchor"></span></span></span>Figure 523 Journey Straight-line Distance Distributions by Mode
 
-![](../images/media/image42.png)
+![](images/media/image42.png)
 
 <span id="_Ref418981350" class="anchor"><span id="_Toc419766926" class="anchor"><span id="_Toc423368659" class="anchor"></span></span></span>Figure 524 Distribution of Bus Segments Required for Trips by Distance and Threshold
 
@@ -1530,7 +1528,7 @@ Average speeds are typically faster in the early morning and then slow as the da
 | **Midday School \[13:30,16:00)** | 11.7      | 8.0%      | 13.7      |
 | All                              | 12.7      | 14.5      | 11.9      |
 
-![](../images/media/image43.png)
+![](images/media/image43.png)
 
 <span id="_Ref421045013" class="anchor"><span id="_Toc423368660" class="anchor"></span></span>Figure 525 Distribution of Start Times by Mode and Threshold
 
@@ -1556,7 +1554,7 @@ The closing of the gap during the midday is due to a combination of the gap in R
 
 All of the factors discussed above lead to the distributions of travel times by mode in Figure 526 below. Commuters from Black or African American tend to have both shorter and longer bus trips than those from White Alone tracts. The latter is due to medium-length trips being slower and requiring more transfers. For trips requiring a combination of bus and rail, the distribution of journey times is overall longer for commuters from Black tracts, again due to slower speeds and more transfers required. For rail trips, the middle of the distribution is shifted to the right for commuters from Black or African American tracts due to the relative speed of the Orange Line and Ashmont branch of the Red Line versus the trunk and Braintree branch of the Red Line. The next section, 5.4.3, will explore more specific areas for improvement based on these finding, leading to strategies to reduce these travel time differences that are suggested in section 5.6 below.
 
-![](../images/media/image44.png)
+![](images/media/image44.png)
 
 <span id="_Ref417414298" class="anchor"><span id="_Toc419766927" class="anchor"><span id="_Toc423368661" class="anchor"></span></span></span>Figure 526 Journey Time Distribution by Tract Threshold and Mode<span id="_Toc419766939" class="anchor"></span>
 
@@ -1663,7 +1661,7 @@ Transfers could be made easier by regulating departures by using an even-headway
 
 The benefits of through-routing select bus routes can also be estimated from the data by assuming new journey times without transfer times for multi-stage trips for any proposed through-route pair. Table 515 shows the ten bus to bus transfers where passengers spend the most aggregate time transferring. Ordering route pairs by this metric shows for which route-pairs through-routing will have the greatest reduction in journey times. The third column shows the estimated benefits from through-routing a particular route pair as the percent impact of eliminating the transfer time on the overall average travel time difference of 3.1 minutes between Black and White trips.
 
-![](../images/media/image45.png)
+![](images/media/image45.png)
 
 <span id="_Ref418963782" class="anchor"><span id="_Toc423368662" class="anchor"></span></span>Figure 527 Top 15 Destination for Bus Journeys Requiring 1+ Transfers Scaled by Demand, Coloured by Average Speed
 
@@ -1687,7 +1685,7 @@ Theoretically, eliminating all bus to bus transfers would reduce the gap in aver
 | 23-&gt;749             | 4.0                         | 0.3%                                                    | 0.6%                    |
 | Remaining Combinations | 7.6                         | 31.1%                                                   | 59.2%                   |
 
-![](../images/media/image46.png)
+![](images/media/image46.png)
 
 <span id="_Ref420062011" class="anchor"><span id="_Toc423368663" class="anchor"></span></span>Figure 528 Map of 10 Bus Transfer Points where Passengers Spend the Most Time (Circle Area Scaled by Total Passenger Waiting Time and Coloured by Average Waiting Time)
 
@@ -1736,7 +1734,7 @@ These findings are subject to the limitations outlined in Table 517, and their l
 
 Journey (i.e. transfer) inference is conservative, as the parameters currently assigned to the algorithm tend to under-infer transfers. Given the higher proportion of journeys requiring multiple stages from Black or African American tracts, the inferred proportion of those journeys may be disproportionately low. Thus this analysis may contain a greater number of shorter, faster trips from Black tracts when in reality these may be linked into longer, slower ones.
 
-![](../images/media/image47.png)
+![](images/media/image47.png)
 
 <span id="_Ref418967406" class="anchor"><span id="_Toc419766928" class="anchor"><span id="_Toc423368664" class="anchor"></span></span></span>Figure 529 Map of Top 15 Destination for Bus-&gt;Rail Journeys (Circle Areas Scaled by Demand and Coloured by Average Speed)
 
@@ -1816,7 +1814,7 @@ The set of Fairmount branch stops is available in the current version of the MBT
 Current travel times are the sum of the observed travel time and, for journeys that start with a bus stage, the estimated waiting time calculated in Section 5.4.1. New travel times are calculated per *Equation 54*.
 
 <span id="_Ref421612458" class="anchor"></span>*Equation 54 Travel Times for Users Switching to the Fairmount Line*
-
+```
 \[TT_{\text{fairmount}} = Access\ Time + Wait\ Time + \text{Travel\ Time}_{\text{od}} + Egress\ Time\]
 
 Where:
@@ -1828,7 +1826,7 @@ Where:
 \(\text{Travel\ Time}_{\text{od}}\): Travel Time from nearest origin Fairmount Station to nearest Fairmount Station to the destination
 
 \[Egress\ Time = \frac{\text{Distance\ from\ nearest\ Fairmount\ Station\ to\ destination}}{3km/\text{hr\ }}\]
-
+```
 The top 10 OD pairs are listed in below. The general direction is inbound and in particular with South Station as a destination, the total number of trips that end within a walking distance of South Station is 225 per weekday.
 
 <span id="_Toc419752151" class="anchor"></span>*Table 518 Top 10 Origin-Destination Pairs Within 800m of the Fairmount Line by Ridership*
@@ -1846,13 +1844,13 @@ The top 10 OD pairs are listed in below. The general direction is inbound and in
 | Uphams Corner         | Newmarket           | 424                     |
 | Four Corners / Geneva | Talbot Avenue       | 417                     |
 
-![](../images/media/image48.png)
+![](images/media/image48.png)
 
 <span id="_Ref420053579" class="anchor"><span id="_Toc423368665" class="anchor"></span></span>Figure 530 Map of Fairmount Stations with 800 m (1/2 mile) Buffer
 
 New travel times are calculated with the assumption that users walk from their home location to the nearest Fairmount station and then travel to the nearest Fairmount station to their original destination and walk to the destination. Under this assumption 50% of trips currently being made along the corridor switch to the Fairmount Line, benefiting from an average travel time decrease of 13.5 minutes. Of the trips making the switch 52% are bus to rail, 44% bus, and 4% are rail. This decreases average travel times in the corridor by 6.8 minutes, from 33.1 minutes to 26.3 minutes. Figure 531 shows the distribution of trip times along the corridor before and after. The dramatic decrease in trip times above 45 minutes is notable. Table 519 shows the benefits aggregated by the number of segments the original trip had. As the number of segments initially required to travel from origin to destination increases, the benefits of the Fairmount Line and the single-stage journey it offers increases. Only 21% of trips with only one stage switch to the Fairmount Line, but 81% of two-stage journeys benefit from changing to the Fairmount Line.
 
-![](../images/media/image49.png)
+![](images/media/image49.png)
 
 <span id="_Ref419765491" class="anchor"><span id="_Toc419766929" class="anchor"><span id="_Toc423368666" class="anchor"></span></span></span>Figure 531 Journey Time Distribution for Trips within Fairmount Corridor
 
@@ -1918,7 +1916,7 @@ The results for the three types of trips are in Table 522 below. The aggregate t
                                                              
  Destination within walking distance of Fairmount Line       | 12.1                     | 0.8%                                           | 3.2%                               |
 
-![](../images/media/image50.png)
+![](images/media/image50.png)
 
 <span id="_Ref421780350" class="anchor"><span id="_Toc423368667" class="anchor"></span></span>Figure 532 Map of Destination Area for Which Transferring to Fairmount Line Might Provide Travel TIme Benefits
 
