@@ -1,3 +1,9 @@
+---
+title: Analyzing Transit Equity Using Automatically Collected Data
+layout: post
+---
+
+#Abstract  
 By inferring individual passengers’ origins, destinations, and transfers using automatically collected transit data, transit providers can obtain and analyze larger volumes of information, with more accuracy, and at more frequent intervals than are available through traditional origin-destination (OD) surveys. Automatic OD inference can be an input into the analysis and reporting of agencies’ social goals, such as the provision of equitable service regardless of race, national origin, or ethnicity, which is federally required in the USA by Title VI of the Civil Rights Act of 1964. The methodology prescribed in the Title VI regulation, however, has not adapted to the opportunity to supplement supply metrics with passenger-centric demand metrics through the availability of OD data. The goal of this thesis is to demonstrate a preliminary methodology to link automatically inferred OD information from regular transit users to the demographic data of public transit commuters from the US Census’s American Community Survey, and to examine variation in passenger-centric metrics such as journey time and speed.
 
 This study infers origins and destinations in the context of the Massachusetts Bay Transportation Authority (MBTA). From a sample month of these data, an example of a passenger-centric analysis is performed by comparing travel times and speeds of trips with origins in areas home to predominantly Black or African American transit commuters to travel times and speeds of trips with origins in areas home to predominantly White transit commuters. Commuters from predominantly Black or African American census tracts are found to have longer travel times and slower speeds relative to commuters from tracts where commuters are predominantly White. Differences are within agency specified margins, but are significant, in particular for journeys involving bus transfers. Short-term solutions such as through-routing of important bus routes and increasing reliability of bus departures at terminals and long-term solutions such as faster, more frequent Diesel Multiple Unit rail service are proposed and evaluated to mitigate these differences.
@@ -10,6 +16,8 @@ Thesis Supervisor: Frederick P. Salvucci
 
 Senior Lecturer of Civil and Environmental Engineering
 
+
+#Acknowledgments  
 The research leading to this thesis was developed over a three-year period during which I had the advice and guidance of a number of people who will be thanked below. During this time, the research was partially funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) and by the Massachusetts Bay Transportation Authority (MBTA).
 
 Thanks to the following faculty and research advisors who have advised me, in chronological order, Haris Koutsopoulos, David Block-Schachter, John Attanucci, Fred Salvucci, and Jinhua Zhao. I’d like to thank them all for their guidance and advice. For their guidance in academic matters, intersecting two departments, and support in crises, thanks go to Chris Zegras and Jinhua Zhao.
