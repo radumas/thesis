@@ -32,7 +32,7 @@ _Research Associate of Civil and Environmental Engineering_
 _Senior Lecturer of Civil and Environmental Engineering_  
 
 # Web-version of Master's Thesis
-Publishing the thesis for my dual Master's at MIT in Tranportation and City Planning in a  more accesible format while testing some web programming. I'm using [jekyll](http://jekyllrb.com) on a machine running `Ubuntu 14.04` for this project.
+Publishing the thesis for my dual Master's at MIT in Tranportation and City Planning in a  more accesible format while testing some web programming. I'm using [jekyll](http://jekyllrb.com) on a machine running `Ubuntu 14.04` for this project. This is **work in progress**, which you can see [here](https://radumas.github.io/thesis). Until the libraries host the pdf, you can find that [here](https://radumas.github.io/thesis/raw_thesis/Thesis Final.pdf) (16MB pdf). 
 
 ## Workflow
 1. [Install Jekyll](https://help.github.com/articles/using-jekyll-with-pages/). In `Ubuntu 14.04` this required installing `ruby 2.2.2` using the [gorails guide](https://gorails.com/setup/ubuntu/14.04) and the `rbenv` method. First installing dependencies
@@ -71,12 +71,19 @@ ruby -v
 
   then installing with `bundle install`
      
-2.  Convert thesis from `docx` to `markdown` using pandoc. This extracts images from the thesis to a [folder](https://github.com/jgm/pandoc/issues/1986). Chapter titles were not rendered with the header markdown, but these will become individual posts so it didn't matter.
+2.  Convert thesis from `docx` to `markdown` using pandoc. This extracts images from the thesis to a [folder](https://github.com/jgm/pandoc/issues/1986). Chapter titles were not rendered with the header markdown, but these will become individual posts so it didn't matter. Not all images were extracted, since some were excel graphs that weren't images. The `mathjax` flag should convert equations to MathJax for display
 
-        pandoc -f docx -t markdown_github -o ~/thesis/_posts/thesis.md --extract-media=~/thesis/images Thesis.docx
+        pandoc -f docx -t markdown_github -o index.md --mathjax --extract-media=images Thesis.docx
         
 
 3.  Build site with `bundle exec jekyll build`
+
+4.  Commit to github 
+    ```
+    git add --all
+    git commit -m "MESSAGE"
+    git push origin gh-pages
+    ```
 
 ##TODO
 - [ ] Split Chapters into posts
