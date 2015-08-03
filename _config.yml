@@ -1,15 +1,6 @@
-name: "Masters Thesis"
-description: "Publishing the thesis for my dual Master's at MIT in Tranportation and City Planning in a more accesible format while testing some web programming. I'm using jekyll on a machine running Ubuntu 14.04 for this project."
-
-url: "http://radumas.github.io/thesis"
-
-paginate: 10
-
+name: thesis
+base.url: "/thesis"
 markdown: rdiscount
+highlighter: pygments
+paginate: 100
 permalink: pretty
-
-gems:
-- jekyll-mentions
-- jemoji
-- jekyll-redirect-from
-- jekyll-sitemap

@@ -1,6 +1,12 @@
 ---
 title: Acknowledgements 
-layout: Post
+layout: fullpage
+section: preface
+notitle: true
+pagetype: story 
+nosidebar: true
+bgcolor: c4c4c4
+published: true
 ---
 
 

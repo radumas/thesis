@@ -1,6 +1,8 @@
 ---
 title: Analysis of Spatial Variation in Transit Travel Times Using OD Data
 layout: post
+section: results
+nosidebar: true
 ---
 
 # Chapter 5: Analysis of Spatial Variation in Transit Travel Times Using OD Data

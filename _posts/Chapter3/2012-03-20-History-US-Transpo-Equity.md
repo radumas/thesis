@@ -1,6 +1,8 @@
 ---
 title: The US Context for Transportation Equity Analyses
-layout: post
+layout: fullpage
+section: litreview
+nosidebar: true
 ---
 
 # The US Context for Transportation Equity Analyses

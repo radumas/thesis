@@ -1,6 +1,8 @@
 ---
 title: Conclusion
-layout: post
+layout: fullpage
+section: conclusion
+nosidebar: true
 ---
 
 # Conclusion

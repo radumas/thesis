@@ -80,7 +80,7 @@ gem 'github-pages'
 
         pandoc -f docx -t markdown_github -o index.md --mathjax --extract-media=images Thesis.docx
         
-Most headers had to be manually modified since, I think, Word also thought of them as lists. Pandoc converted a number of headers with `<span>` and `<anchor>` tags, I think with a table of contents in mind. So these were manually removed, and the headings properly formatted.
+Most headers had to be manually modified since, I think, Word also thought of them as lists. Pandoc converted a number of headers with `<span>` and `<anchor>` tags, I think with a table of contents in mind. So these were manually removed, and the headings properly formatted. MathJax equations had to be surrounded by `<div>` or `<span>` [tags](http://stackoverflow.com/questions/10987992/using-mathjax-with-jekyll).
 
 3.  Build site with `bundle exec jekyll build`
 
@@ -91,6 +91,9 @@ Most headers had to be manually modified since, I think, Word also thought of th
     git push origin gh-pages
     ```
 
+5. Apply the Code for America Template
+
+6. The posts are reverse chronological order
 ##TODO
 - [x] Split Chapters into posts
 - [ ] Find missing images

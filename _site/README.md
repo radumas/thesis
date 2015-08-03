@@ -32,7 +32,7 @@ _Research Associate of Civil and Environmental Engineering_
 _Senior Lecturer of Civil and Environmental Engineering_  
 
 # Web-version of Master's Thesis
-Publishing the thesis for my dual Master's at MIT in Tranportation and City Planning in a  more accesible format while testing some web programming. I'm using [jekyll](http://jekyllrb.com) on a machine running `Ubuntu 14.04` for this project.
+Publishing the thesis for my dual Master's at MIT in Tranportation and City Planning in a  more accesible format while testing some web programming. I'm using [jekyll](http://jekyllrb.com) on a machine running `Ubuntu 14.04` for this project. This is **work in progress**, which you can see [here](https://radumas.github.io/thesis). Until the libraries host the pdf, you can find that [here](https://radumas.github.io/thesis/raw_thesis/Thesis Final.pdf) (16MB pdf). 
 
 ## Workflow
 1. [Install Jekyll](https://help.github.com/articles/using-jekyll-with-pages/). In `Ubuntu 14.04` this required installing `ruby 2.2.2` using the [gorails guide](https://gorails.com/setup/ubuntu/14.04) and the `rbenv` method. First installing dependencies
@@ -60,25 +60,45 @@ ruby -v
 ```
 
   then "telling Rubygems not to install the documentation for each package locally and then install Bundler"
-
-        echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-        sudo gem install bundler
-
+```
+echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+sudo gem install bundler
+```
+  _Optional Ubuntu step_ `nodejs` is [required](http://stackoverflow.com/a/9333316/4047679) install it, and then [fix](http://askubuntu.com/questions/477577/alias-of-nodejs-as-node-on-14-04?lq=1) the problem with the `nodejs` being run under the `nodejs` command when most node-related things expect `node`.
+```
+sudo apt-get install nodejs
+sudo ln -s /usr/local/bin/nodejs /usr/bin/node
+```
   In the project directory typing `bundle init` and then editing the newly created `Gemfile` to contain
-
-        source 'https://rubygems.org'
-        gem 'github-pages'
-
+```
+source 'https://rubygems.org'
+gem 'github-pages'
+```
   then installing with `bundle install`
      
-2.  Convert thesis from `docx` to `markdown` using pandoc. This extracts images from the thesis to a [folder](https://github.com/jgm/pandoc/issues/1986). Chapter titles were not rendered with the header markdown, but these will become individual posts so it didn't matter.
+2.  Convert thesis from `docx` to `markdown` using pandoc. This extracts images from the thesis to a [folder](https://github.com/jgm/pandoc/issues/1986). Chapter titles were not rendered with the header markdown, but these will become individual posts so it didn't matter. Not all images were extracted, since some were excel graphs that weren't images. The `mathjax` flag should convert equations to MathJax for display
 
-        pandoc -f docx -t markdown_github -o ~/thesis/_posts/thesis.md --extract-media=~/thesis/images Thesis.docx
+        pandoc -f docx -t markdown_github -o index.md --mathjax --extract-media=images Thesis.docx
         
+Most headers had to be manually modified since, I think, Word also thought of them as lists. Pandoc converted a number of headers with `<span>` and `<anchor>` tags, I think with a table of contents in mind. So these were manually removed, and the headings properly formatted. MathJax equations had to be surrounded by `<div>` or `<span>` [tags](http://stackoverflow.com/questions/10987992/using-mathjax-with-jekyll).
 
 3.  Build site with `bundle exec jekyll build`
 
+4.  Commit to github 
+    ```
+    git add --all
+    git commit -m "MESSAGE"
+    git push origin gh-pages
+    ```
+
+5. Apply the Code for America Template
+
+6. The posts are reverse chronological order
 ##TODO
-- [ ] Split Chapters into posts
+- [x] Split Chapters into posts
 - [ ] Find missing images
 - [ ] Equation 42 temporarily deleted so jekyll will build properly. Need to fix MathJax notation
+- [ ] Make the thing lay-person readable
+- [ ] Add links to other theses
+- [ ] Format citations somehow
+- [ ] Footnotes are at the end

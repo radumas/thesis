@@ -1,6 +1,8 @@
 ---
 title: Introduction
-layout: Post
+layout: fullpage
+section: intro
+nosidebar: true
 ---
 
 With the growing adoption of automatic data collection systems (ADCS), transit providers can now collect volumes of data on their operations and their customers’ behavior. The use of automated fare collection (AFC) systems, by collecting fares electronically and storing the data digitally, permits urban public transit providers to collect fine-resolution data on how their customers interact with the network. These data can show, for every transaction a customer performs, where and when that transaction occurred. If customers are uniquely identified, it is then possible to determine their behavior over one or many days, including the origins and destinations (OD) of their trips.
