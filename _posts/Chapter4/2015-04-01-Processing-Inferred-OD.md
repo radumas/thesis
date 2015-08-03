@@ -271,15 +271,15 @@ This method was validated using data from the U.S. Census bureay’s 2013 5-year
 
 <span id="_Ref421795227" class="anchor"></span>Equation 42 Estimating number of commuters per tract
 ```
-\[C_{i} = \sum_{j = 1}^{J}{C_{\text{ij}} = \sum_{j = 1}^{J}\frac{{(A}_{j} \cap A_{i})}{\sum_{i = 1}^{I}{{(A}_{j} \cap A_{i})}}}\]
+    \[C_{i} = \sum_{j = 1}^{J}{C_{\text{ij}} = \sum_{j = 1}^{J}\frac{{(A}_{j} \cap A_{i})}{\sum_{i = 1}^{I}{{(A}_{j} \cap A_{i})}}}\]
 ```
 Where:
 
-\({(A}_{j} \cap A_{i})\) is the area of the intersection of user *j*’s home area and census tract *i*
+    \({(A}_{j} \cap A_{i})\) is the area of the intersection of user *j*’s home area and census tract *i*
 
-\(\sum_{i = 1}^{I}{{(A}_{j} \cap A_{i})}\ \)is the total area of user *j*’s home area which is present within census tracts, and therefore
+    \(\sum_{i = 1}^{I}{{(A}_{j} \cap A_{i})}\ \)is the total area of user *j*’s home area which is present within census tracts, and therefore
 
-\(C_{\text{ij}}\ \)represents the probability that user *j* resides within tract *i*
+    \(C_{\text{ij}}\ \)represents the probability that user *j* resides within tract *i*
 
 The map in **Error! Reference source not found.** shows the result of this operation. There is a high density of users along the heavy rail lines, and very low density in the outer suburbs.
 
