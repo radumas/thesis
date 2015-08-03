@@ -270,9 +270,9 @@ The final sample is of 328 thousand fare cards who have travelled a total 10.6 m
 This method was validated using data from the U.S. Census bureay’s 2013 5-year estimates of the Means of Transportation to Work by Selected Characteristics (S0802), which were available at a Census Tract resolution. Census tracts which had no estimated transit commuters were excluded, since these enclosed large urban parks. The number of commuters residing within each tract was estimated using Equation 42.
 
 <span id="_Ref421795227" class="anchor"></span>Equation 42 Estimating number of commuters per tract
-
+```
 \[C_{i} = \sum_{j = 1}^{J}{C_{\text{ij}} = \sum_{j = 1}^{J}\frac{{(A}_{j} \cap A_{i})}{\sum_{i = 1}^{I}{{(A}_{j} \cap A_{i})}}}\]
-
+```
 Where:
 
 \({(A}_{j} \cap A_{i})\) is the area of the intersection of user *j*’s home area and census tract *i*
