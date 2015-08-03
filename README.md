@@ -89,3 +89,6 @@ ruby -v
 - [ ] Split Chapters into posts
 - [ ] Find missing images
 - [ ] Equation 42 temporarily deleted so jekyll will build properly. Need to fix MathJax notation
+- [ ] Make the thing lay-person readable
+- [ ] Add links to other theses
+- [ ] Format citations somehow
