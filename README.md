@@ -80,6 +80,7 @@ gem 'github-pages'
 
         pandoc -f docx -t markdown_github -o index.md --mathjax --extract-media=images Thesis.docx
         
+Most headers had to be manually modified since, I think, Word also thought of them as lists. Pandoc converted a number of headers with `<span>` and `<anchor>` tags, I think with a table of contents in mind. So these were manually removed, and the headings properly formatted.
 
 3.  Build site with `bundle exec jekyll build`
 
@@ -91,9 +92,10 @@ gem 'github-pages'
     ```
 
 ##TODO
-- [ ] Split Chapters into posts
+- [x] Split Chapters into posts
 - [ ] Find missing images
 - [ ] Equation 42 temporarily deleted so jekyll will build properly. Need to fix MathJax notation
 - [ ] Make the thing lay-person readable
 - [ ] Add links to other theses
 - [ ] Format citations somehow
+- [ ] Footnotes are at the end
