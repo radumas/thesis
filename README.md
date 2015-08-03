@@ -60,15 +60,20 @@ ruby -v
 ```
 
   then "telling Rubygems not to install the documentation for each package locally and then install Bundler"
-
-        echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-        sudo gem install bundler
-
+```
+echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+sudo gem install bundler
+```
+  _Optional Ubuntu step_ `nodejs` is [required](http://stackoverflow.com/a/9333316/4047679) install it, and then [fix](http://askubuntu.com/questions/477577/alias-of-nodejs-as-node-on-14-04?lq=1) the problem with the `nodejs` being run under the `nodejs` command when most node-related things expect `node`.
+```
+sudo apt-get install nodejs
+sudo ln -s /usr/local/bin/nodejs /usr/bin/node
+```
   In the project directory typing `bundle init` and then editing the newly created `Gemfile` to contain
-
-        source 'https://rubygems.org'
-        gem 'github-pages'
-
+```
+source 'https://rubygems.org'
+gem 'github-pages'
+```
   then installing with `bundle install`
      
 2.  Convert thesis from `docx` to `markdown` using pandoc. This extracts images from the thesis to a [folder](https://github.com/jgm/pandoc/issues/1986). Chapter titles were not rendered with the header markdown, but these will become individual posts so it didn't matter. Not all images were extracted, since some were excel graphs that weren't images. The `mathjax` flag should convert equations to MathJax for display
