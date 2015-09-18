@@ -1,5 +1,5 @@
 name: thesis
-base.url: "/thesis"
+baseurl: "/thesis"
 markdown: rdiscount
 highlighter: pygments
 paginate: 100

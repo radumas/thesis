@@ -93,7 +93,9 @@ Most headers had to be manually modified since, I think, Word also thought of th
 
 5. While the Code for America Annual Report is a beautiful webpage, it doesn't really follow the principles of Jekyll terribly closely, i.e., most sections are individually styled, which leads to more editing of SASS than I would've wanted, so I'm switching to this theme shortly https://github.com/hmfaysal/Notepad/
 
-6. The posts are reverse chronological order
+Can add `reversed` to the liquid loops `{% for p in site.posts reversed %}` to display posts in order to display them in chronological order of their filenames, which makes working with the files less of a hassle.
+
+
 ##TODO
 - [x] Split Chapters into posts
 - [ ] Find missing images
