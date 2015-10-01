@@ -1,6 +1,0 @@
-name: thesis
-baseurl: "/thesis"
-markdown: rdiscount
-highlighter: pygments
-paginate: 100
-permalink: pretty
