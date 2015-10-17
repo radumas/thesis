@@ -1,11 +1,9 @@
 ---
-title: The US Context for Transportation Equity Analyses
-layout: fullpage
+title: "Chapter 3: The US Context for Transportation Equity Analyses"
+layout: post
 section: litreview
 nosidebar: true
 ---
-
-# The US Context for Transportation Equity Analyses
 
 Following an explanation of the methodology to automatically infer origins and destinations, this chapter positions this research within the context of transportation and transit equity analysis in the USA. First is presented a history of transportation equity regulations in the USA, followed by a review of critiques of the current state of equity analyses in transportation. Next comes a discussion of recent studies on equity in Boston including an examination of the most recent Federal Transit Administration (FTA)-required equity analysis of the MBTA and this procedure is critiqued in light of the state of the literature. Opportunities to integrate ADCS, in particular the OD inference developed for this research, into the three required forms of equity reporting are discussed. From this is developed a framework and methodology applied in subsequent chapters to the inferred OD data as a pilot alternative to the FTA-required analysis.
 

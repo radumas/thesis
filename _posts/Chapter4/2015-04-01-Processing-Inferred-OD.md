@@ -1,11 +1,9 @@
 ---
-title: OD Processing for Analysis of Spatial Variability of Transit Effectiveness
-layout: fullpage
+title: "Chapter 4: OD Processing for Analysis of Spatial Variability of Transit Effectiveness"
+layout: post
 section: homelocation
 nosidebar: true
 ---
-
-# Chapter 4: OD Processing for Analysis of Spatial Variability of Transit Effectiveness
 
 Following the discussion of the selection of indicators in Chapter 3, this chapter describes the data used and the processing required to generate the information input to the spatial analysis described in Chapter 5. In order to compare transit outcomes by demographics, it is necessary to link farecards to demographic data. In the absence of information directly linking a farecard to its owner’s race or ethnicity, farecards will be aggregated by tract based on the demographics of that tract. The demographics used are the American Community Survey’s data on the racial/ethnic proportions of transit commuters. In order to perform this linkage, home locations, an area where a transit user likely resides, will be inferred from each user’s usage. Farecards must first be filtered in order to have a sample of regular commuters who live near where they first access transit in the day. First the results of 1 month of OD inference are described. Next will come the steps required to filter farecards in order to have a sample of regular commuters.
 

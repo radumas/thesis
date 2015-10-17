@@ -1,11 +1,9 @@
 ---
-title: Analysis of Spatial Variation in Transit Travel Times Using OD Data
+title: "Chapter 5: Analysis of Spatial Variation in Transit Travel Times Using OD Data"
 layout: post
 section: results
 nosidebar: true
 ---
-
-# Chapter 5: Analysis of Spatial Variation in Transit Travel Times Using OD Data
 
 This chapter discusses the results of an analysis of the spatial variation of public transit travel times and speeds between White and Black commuters using the MBTA in the Boston Metropolitan area. This example analysis demonstrates how the use of inferred origin-destination data can provide better information about spatial variability of transit effectiveness than the federally required equity reporting methodologies discussed in Chapter 3. The use of individual passenger observations enables the analysis to reflect the passenger experience better than supply-side metrics while also revealing the elements of the public transit system that may be responsible for inequities. The purpose of Title VI and EJ analysis is to identify disparate outcomes, not to prove discriminatory intent, and the goal of this chapter is to reveal how travel time differences may be addressed, not to assign blame for their existence.
 

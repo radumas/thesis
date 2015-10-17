@@ -98,6 +98,8 @@ Can add `reversed` to the liquid loops `{% for p in site.posts reversed %}` to d
 
 ##TODO
 - [x] Split Chapters into posts
+- [ ] Add MBTA & NSERC logos to acknowledgements
+- [ ] Link to about page
 - [ ] Find missing images
 - [ ] Equation 42 temporarily deleted so jekyll will build properly. Need to fix MathJax notation
 - [ ] Make the thing lay-person readable

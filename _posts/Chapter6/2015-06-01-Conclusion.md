@@ -1,6 +1,6 @@
 ---
-title: Conclusion
-layout: fullpage
+title: "Chapter 6: Conclusion"
+layout: post
 section: conclusion
 nosidebar: true
 ---
