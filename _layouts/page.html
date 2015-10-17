@@ -26,8 +26,8 @@ Description: Awesome dude, awesome life
         <header class="notepad-page-header">
             <div class="notepad-page-menu-header">
                 
-                    <a class="notepad-blog-logo" href="{{ site.url }}">
-                        <img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo">
+                    <a class="notepad-blog-logo" href="{{ site.baseurl }}">
+                        <img src="{{ site.baseurl }}/images/{{ site.logo }}" alt="Blog Logo">
                     </a>
                 
                 
@@ -44,10 +44,10 @@ Description: Awesome dude, awesome life
             <li>{% if link.external %}
                     <a href="{{ link.url }}">{{ link.title }}</a>
                 {% else %}
-                    <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                 {% endif %} </li>
 {% endfor %}            
-           <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+           <li><a href="{{ site.baseurl }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
     </ul>
 </div>
             </div>
