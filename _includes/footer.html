@@ -45,6 +45,22 @@
             </span>
         </a>
         {% endif %}
+        {% if site.linkedin_link %}
+        <a href="{{ site.linkedin_link }}" target="_new">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
+        {% if site.stackoverflow_link %}
+        <a href="{{ site.stackoverflow_link }}" target="_new">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-stack-overflow fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
     </div>
     
     <div class="cf"></div>

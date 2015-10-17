@@ -16,11 +16,13 @@ owner:
   avatar:         
   email:          radumas@alum.mit.edu
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Awesome Life
+  description:    Planner/engineer working on sustainable transportation
   # Social networking links used in footer. Update and remove as you like.
   twitter:        dumasraphael
   #facebook:       hmfaysal
-  github:         radumas      
+  github:         radumas  
+  linkedin_link: https://linkedin.com/in/DumasRaphael
+  stackoverflow_link: http://gis.stackexchange.com/users/36886/raphael
   #instagram:      hmfaysal
   # For Google Authorship https://plus.google.com/authorship
   #google_plus:    https://plus.google.com/u/0/102602916593522619858
