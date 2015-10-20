@@ -7,7 +7,7 @@ dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	  "http://radumas.github.io/thesis"
+url:        	  "http://radumas.github.io"
 baseurl:          "/thesis"
 
 # Owner/author information
@@ -60,7 +60,7 @@ timezone:    Asia/Dhaka
 future:      true
 highlighter: pygments
 markdown:    kramdown
-paginate:    8
+paginate:    10
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
