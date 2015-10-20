@@ -1,6 +1,6 @@
 ---
 title: Acknowledgements 
-layout: fullpage
+layout: post
 section: preface
 image: MBTA_New_Flyer_C40LF
 notitle: true

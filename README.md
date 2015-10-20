@@ -80,7 +80,7 @@ gem 'github-pages'
 
         pandoc -f docx -t markdown_github -o index.md --mathjax --extract-media=images Thesis.docx
         
-Most headers had to be manually modified since, I think, Word also thought of them as lists. Pandoc converted a number of headers with `<span>` and `<anchor>` tags, I think with a table of contents in mind. So these were manually removed, and the headings properly formatted. MathJax equations had to be surrounded by `<div>` or `<span>` [tags](http://stackoverflow.com/questions/10987992/using-mathjax-with-jekyll).
+Most headers had to be manually modified since, I think, Word also thought of them as lists. Pandoc converted a number of headers with `<span>` and `<anchor>` tags, I think with a table of contents in mind. So these were manually removed, and the headings properly formatted. MathJax equations had to be surrounded by `<div>` or `<span>` [tags](http://stackoverflow.com/questions/10987992/using-mathjax-with-jekyll). Tables with complex formatting have to be reformatted. Numbered and unordered lists had to be tweaked slightly using gedit.
 
 3.  Build site with `bundle exec jekyll build`
 
@@ -98,8 +98,16 @@ Can add `reversed` to the liquid loops `{% for p in site.posts reversed %}` to d
 
 ##TODO
 - [x] Split Chapters into posts
+- [ ] Add MBTA & NSERC logos to acknowledgements
+- [ ] Link to about page
 - [ ] Find missing images
 - [ ] Equation 42 temporarily deleted so jekyll will build properly. Need to fix MathJax notation
+- [ ] Fix Table 5.7
+- [ ] Fix Table 5.8
+- [ ] Fix Table 5.9
+- [ ] Fix Table 5.10
+- [ ] Fix Table 5.25
+- [ ] Fix Table 6.3
 - [ ] Make the thing lay-person readable
 - [ ] Add links to other theses
 - [ ] Format citations somehow
