@@ -21,6 +21,7 @@ The use of boarding and alighting times, as well as the coordinates of origin an
 On the continuum (Figure 2.1) from open to closed AFC payment systems, an open system collects the least amount of information about user behavior: collecting a fee and recording a timestamp only when users enter the system. Examples of this type of system include transit systems in Boston, New York, and Montreal. At the other end of this continuum are closed payment systems, typically with distance-based and/or time-based fares. The calculation of each customer’s fare requires an exit transaction, thus recording the destination location and time such as in Singapore (Robinson, Narayanan, Toh, & Pereira, 2014) or Seoul. Between these two are systems that include a combination of open and closed modes, typically an open bus system and a closed rail system such as in London, San Francisco, and Washington, D.C.
 
 ![](/images/media/image1.png)
+
 <span id="_Ref404252507" class="anchor"><span id="_Toc405489600" class="anchor"><span id="_Toc415253080" class="anchor"><span id="_Toc423368604" class="anchor"></span></span></span></span>Figure 2.1 Open-Closed AFC Payment Continuum
 
 ### Generalized Data Flow & Issues
@@ -30,6 +31,7 @@ Figure 2.2 shows the generalized flow of the AFC, AVL, and schedule (stop and st
 In legacy data collection systems, it is therefore necessary to synthesize automatically collected data prior to origin inference. First one must determine the “pattern,” or the sequence of stops served in a given route and direction, that is being performed by the vehicle. This is done in order to filter the set of stops to which the AVL system GPS records may be matched in order to infer the boarding or alighting stops. By also assigning a pattern to customers, one limits the set of stop events at which the customer can board or alight. This assumes that customers would not stay on a vehicle to travel on its next trip after a terminus. If a set of vehicle-trip start and end times exists then records can be matched to trips temporally, though this requires a reliable time when a vehicle transitions to a subsequent trip.
 
 ![](../images/media/image2.png)
+
 <span id="_Ref404251367" class="anchor"><span id="_Toc405489601" class="anchor"><span id="_Toc415253081" class="anchor"><span id="_Toc423368605" class="anchor"></span></span></span></span>Figure 2.2 Generalized Data Flow for OD Inference, Bolded Boxes Represent Processes, Others Represent Data Sources
 
 In the MBTA context, stop arrival and departure times must be synthesized from raw AVL data and from the set of scheduled stops and their coordinates. Three different methods, depending on available data, are presented in section 2.3.2. With a pattern identified for both vehicle and transaction, and stop events generated, it is then possible to infer an origin by matching the vehicle location to the user based on the transaction time.
@@ -51,6 +53,7 @@ The inference of stop-level travel information necessitates greater data accurac
 In order to generalize data processing, and reduce the variety of internal data sources to be used, data published in the General Transit Feed Specification (GTFS)[3] and provided online by the MBTA[4] (and many other transit agencies) were used wherever possible. This yielded the scheduled stop times for the modes to be processed, as well as spatial coordinates of these locations.
 
 ![](../images/media/image3.png)
+
 <span id="_Ref414974064" class="anchor"><span id="_Toc415253082" class="anchor"><span id="_Toc423368606" class="anchor"></span></span></span>Figure 2.3 MBTA Subway and Key Bus Routes Schematic<span id="_Ref404953835" class="anchor"></span>
 
 ### AFC
@@ -58,9 +61,11 @@ In order to generalize data processing, and reduce the variety of internal data 
 The MBTA’s AFC system collects fares on bus, LRT, and subway. Commuter rail fares are currently validated by conductors and are not recorded automatically, however passes exist that can be used on both commuter rail and the rapid transit network. The AFC system records detailed transaction information for cash, magnetic-stripe paper tickets (Charlie Tickets), and RFID-equipped smart cards (Charlie Cards). Since the AFC table does not contain all of the necessary fields for OD inference, some pre-processing was required. This includes a farebox clock correction algorithm which will be discussed further in the Vehicle Farebox Clock Correction section below. Figure 2.5 shows the entity relational diagram for this preprocessing with the output table on the right (see Figure 2.4 for an explanation of the Crow’s Foot notation relationships between fields in different table).
 
 ![](../images/media/image4.png)
+
 <span id="_Ref415048182" class="anchor"><span id="_Toc415253083" class="anchor"><span id="_Toc423368607" class="anchor"></span></span></span>Figure 2.4 Entity Relationship Legend
 
 ![](../images/media/image5.png)
+
 <span id="_Ref415050744" class="anchor"><span id="_Toc415253084" class="anchor"><span id="_Toc423368608" class="anchor"></span></span></span>Figure 2.5 AFC Preprocessing Relational Diagram
 
 The goals of the preprocessing are to:
@@ -118,6 +123,7 @@ After running destination inference, it became apparent that vehicle farebox clo
 Further investigation found that clocks are recalibrated when vehicles are in the garage when the farebox communicates with a central server during refueling or cash extraction. In normal operations the clocks will drift, a thorough analysis of all fareboxes revealing that most have clocks drifting by roughly seven seconds per day (Gordon, 2014). Such an error is insignificant for most purposes, but if uncorrected the clock error can lead to inaccuracies in origin and destination inference. This is especially true for transactions occurring at the beginning of a vehicle trip, since, due to clock drift, these will be assigned to the previous trip as in Figure 2.6.
 
 ![](../images/media/image6.png)
+
 <span id="_Ref415236165" class="anchor"><span id="_Toc415253085" class="anchor"><span id="_Toc423368609" class="anchor"></span></span></span>Figure 2.6 Boarding and Alighting Comparison: Uncorrected AFC timestamps
 
 To address the issue of clock drift, the timestamps of AFC records are corrected by interpolating the temporal error of each farebox between clock calibrations. Data from each farebox log, which records the times of clock calibrations and cash removals, are periodically matched to data from that bus’ garage server log, which uses a reliable clock and also records cash removals. Immediately before clock calibration, the connection between garage server and farebox is logged in both databases. Clock correction is performed using the following methodology:  
@@ -135,6 +141,7 @@ To address the issue of clock drift, the timestamps of AFC records are corrected
 This process was automated to correct all transactions. Figure 2.7 shows the result of this correction for the example appearing Figure 2.6. The reader can see that the orange and yellow dotted lines, representing the total boardings estimated using APC and AFC respectively, are much more closely aligned
 
 ![](../images/media/image7.png)
+
 <span id="_Ref415237492" class="anchor"><span id="_Toc405489604" class="anchor"><span id="_Toc415253086" class="anchor"><span id="_Toc423368610" class="anchor"></span></span></span></span>Figure 2.7 Boarding and Alighting Comparison: Corrected AFC timestamps
 
 ### Bus Stop Events
@@ -195,6 +202,7 @@ For modes in which customers have access to a network, rather than a single bus 
 Heavy rail data come in the form of track circuit records on the three heavy rail lines, for which the processing algorithm is describe in the following paragraphs. Figure 2.9 below shows the different tables used in this processing, as well as the output of the processing algorithm.
 
 ![](../images/media/image9.png)
+
 <span id="_Ref405023673" class="anchor"><span id="_Toc405489606" class="anchor"><span id="_Toc415253088" class="anchor"><span id="_Toc423368612" class="anchor"></span></span></span></span>Figure 2.9 Track Processing Relational Diagram and Output Data
 
 Each record contains a trip ID, a timestamp, and the location ID of that circuit. By matching location IDs to a lookup table, one can match records to their locations, and whether that circuit is at a station platform. There is one circuit per platform per direction.
@@ -216,6 +224,7 @@ The sensitivity of destination-inference rates to user-specified parameters was 
 Unlike London’s closed rail system, which yields the times and locations of passenger origins and destinations, Boston’s underground rapid transit network, which allows behind-the-gate transfers, is an open fare payment system. Destination locations and times must therefore be inferred for Boston’s rapid transit lines (heavy rail, light rail, and bus rapid transit) which offer transfers underground. The methodology developed is described below.
 
 ![](../images/media/image10.png)
+
 <span id="_Ref405036095" class="anchor"><span id="_Toc415253089" class="anchor"><span id="_Toc423368613" class="anchor"></span></span></span>Figure 2.10 Comparing Sensitivity to Destination Inference Distance for Bus
 
 ### Other examples of destination inference in rail networks 
@@ -253,6 +262,7 @@ The arrival-time inference algorithm is executed as follows (see Figure 2.11):
 Arrival inference was initially tested using GTFS scheduled data, and then a hybrid of track data (where available) and schedule data was used. The number of successfully inferred rail destinations increased by 4,300 (0.9%) using track circuit data versus simply using schedule data because these customers were inferred to arrive in time to board their next bus. Many of these passenger trips were then inferred to have been linked to the customer’s previous or subsequent bus or rail trips.
 
 ![](../images/media/image11.png)
+
 <span id="_Ref405034235" class="anchor"><span id="_Toc405489607" class="anchor"><span id="_Toc415253090" class="anchor"><span id="_Toc423368614" class="anchor"></span></span></span></span>Figure 2.11 Arrival Time Inference Flow Chart
 
 ## Interchange Inference 

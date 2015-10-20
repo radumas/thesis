@@ -11,8 +11,7 @@ A comparison between Black and White commuters was chosen for this analysis sinc
 
 Following a discussion of these data sources, performance metrics for commuting trips made by all are presented. Because aggregate ridership demographics are used in this analysis, it is necessary to select thresholds for these demographic proportions to determine areas from which public transit commuters are predominantly White or predominantly Black. The selection of these thresholds is discussed, as well as the sensitivity of the results to the selected thresholds in section 5.3.1. Journey performance is analyzed for the selected thresholds, and some solutions are proposed. The limitations of the data used are discussed, as well as their likely impacts on the results.
 
-## Data Sources  
-
+## Data Sources
 ### American Community Survey
 
 The U.S. Census Bureau’s 2013 five-year estimates of the Means of Transportation to Work by Selected Characteristics (S0802) gives the number of public transit commuters by race, income, citizenship status, occupation, and travel time by the 2010 census tracts. Unlike the PUMS data used in section 4.2.4, the public transit category includes categories for which there is no AFC inferred OD information such as commuter rail and boat. Figure 5.1 shows the proportion of public transit riders by different races identified by the ACS for census tracts for which at least one user’s home location was inferred.
