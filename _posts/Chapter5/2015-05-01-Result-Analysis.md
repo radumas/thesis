@@ -17,16 +17,17 @@ Following a discussion of these data sources, performance metrics for commuting 
 
 The U.S. Census Bureau’s 2013 five-year estimates of the Means of Transportation to Work by Selected Characteristics (S0802) gives the number of public transit commuters by race, income, citizenship status, occupation, and travel time by the 2010 census tracts. Unlike the PUMS data used in section 4.2.4, the public transit category includes categories for which there is no AFC inferred OD information such as commuter rail and boat. Figure 5.1 shows the proportion of public transit riders by different races identified by the ACS for census tracts for which at least one user’s home location was inferred.
 
+![Figure 5-1](/images/media/figure_5_1.png)
 <span id="_Ref409469219" class="anchor"><span id="_Toc423368636" class="anchor"></span></span>Figure 5.1 Proportion of Public Transit Riders by Race (ACS 2013)
 
 Figure 5.2 shows the spatial distribution of the proportion of public transit commuters who identify as White, and not-Hispanic/Latino. The proportion of White riders is higher near Heavy Rail lines, in select neighbourhoods and towns in the inner core such as South Boston, Charlestown, the Back Bay, and Cambridge, or out in the suburbs. Minority ridership tends to concentrate in the Urban Core in the space between Heavy Rail lines or in a few suburban towns such as Randolph and Lynn.
 
 However the map below doesn’t reflect absolute numbers of commuters. The dot map in Figure 5.3 below represent 10 commuters by one dot randomly placed within the census tract boundary. Thus intensity can be shown by the concentration of the dot color, while avoiding the issue of larger tracts on the periphery being more noticeable due to their size rather than their intensity. The geographic separation of Black and White commuters is still noticeable, in particular south west of downtown Boston and the drop in the number of commuters outside of the core served by rapid transit is now noticeable.
 
-![](../images/media/image26.png)
+![Figure 5-2](../images/media/image26.png)
 <span id="_Ref409361707" class="anchor"><span id="_Toc408587169" class="anchor"><span id="_Toc419766908" class="anchor"><span id="_Toc423368637" class="anchor"></span></span></span></span>Figure 5.2 Proportion of Public Transit Users who are White Alone, not Hispanic or Latino (ACS 2013
 
-![](../images/media/image15.png)
+![Figure 5-3](../images/media/image15.png)
 <span id="_Ref409362620" class="anchor"><span id="_Toc419766909" class="anchor"><span id="_Toc423368638" class="anchor"></span></span></span>Figure 5.3 Dot Map of Public Transit Commuters Identifying as White or as Black and African American (ACS 2013)
 
 ### Inferred Weekday Home-based Journeys
@@ -43,22 +44,25 @@ This section will examine journey characteristics for the entire network to set 
 
 Waiting times are not recorded in the ODX output when a bus stage is the first stage of a user’s journey since payment occurs after waiting at the stop. For rail journeys, fare payment occurs before waiting for a vehicle, and for multi-stage journeys, the transfer time between the arrival of one stage and the departure of the next includes waiting time at the stop. Waiting time is inferred for bus stages in section 5.4.1. Given the assumptions required in its inference, results will first be compared by disaggregating statistics by mode, such that journey times with recorded waiting times are not compared with journey times lacking waiting time.
 
-![](../images/media/image27.png)
+![Figure 5-4](../images/media/image27.png)
 <span id="_Ref408489990" class="anchor"><span id="_Toc408587171" class="anchor"><span id="_Toc419766910" class="anchor"><span id="_Toc423368639" class="anchor"></span></span></span></span>Figure 5.4 Map of Farecard Density by Census Tract
 
-![](../images/media/image28.png)
+![Figure 5-5](../images/media/image28.png)
 <span id="_Ref417399934" class="anchor"><span id="_Toc408587174" class="anchor"><span id="_Toc419766911" class="anchor"><span id="_Toc423368640" class="anchor"></span></span></span></span>Figure 5.5 Destination Inference Rate by Census Tract
 
 <span id="_Toc409468232" class="anchor"><span id="_Ref417400525" class="anchor"></span></span>
 
+![Figure 5-6](/images/media/figure_5_6.png)
 <span id="_Ref409366656" class="anchor"><span id="_Toc419766912" class="anchor"><span id="_Toc423368641" class="anchor"></span></span></span>Figure 5.6 Distribution of Straight-Line Distance by Journey
 
+![Figure 5-7](/images/media/figure_5_7.png)
 <span id="_Ref416821541" class="anchor"><span id="_Toc419766913" class="anchor"><span id="_Toc423368642" class="anchor"></span></span></span>Figure 5.7 Average Straight-Line Journey Distance by Census Tract
 
 Figure 5.8 shows the distribution of travel times by mode while Table 5.1 shows journey time, travel time, and the number of segments averaged by each mode. The “Rail” label applies to any journeys involving the rapid transit network, including the Silver Line Waterfront. Mixed refers to a combination of bus and rail. Segments take into account transfers behind the gate. Distances are measured as a straight-line from origin to destination, in order to capture their proximity, rather than detours taken by the transit network.
 
 As one would expect, bus is used for shorter journeys than rail. Rail alone is used for the bulk of journeys and travel times are typically between bus and a combination of bus and rail (mixed). Mixed mode journeys are longer because they are journeys involving a bus stage to or from a rail stage in the inner core and on average, they cover more distance.
 
+![Figure 5-8](/images/media/figure_5_8.png)
 <span id="_Ref417408615" class="anchor"><span id="_Toc419766914" class="anchor"><span id="_Toc423368643" class="anchor"></span></span></span>Figure 5.8 Distribution of Journey Time by Mode
 
 <span id="_Ref417401771" class="anchor"><span id="_Toc419752143" class="anchor"></span></span>Table 5.1 Journey Averages by Mode
@@ -71,7 +75,7 @@ As one would expect, bus is used for shorter journeys than rail. Rail alone is u
 
 The map in Figure 5.9 below shows the spatial distribution of average journey times by tract. Since travel time is only inferred for journeys that start at a gated station, there are artifacts along the surface portion of the Green Line because journeys on that segment are not used. Besides these, the pattern resembles what one might expect from a largely radial system: shorter travel times in the center, growing longer as the distance from the center increases. There exist a few outliers outside the center which are likely due to there being few trips originating from those tracts.
 
-![](../images/media/image29.png)
+![Figure 5-9](../images/media/image29.png)
 <span id="_Ref409469945" class="anchor"><span id="_Toc423368644" class="anchor"></span></span>Figure 5.9 Map of Average Journey Time by Census Tract
 
 ## Threshold Selection
@@ -102,7 +106,7 @@ Table 5.2 shows that over 75% of Black commuters reside in tracts meeting the Bl
 Though the FTA has explicit guidance on how to select thresholds,
 Karner & Niemeier (2013) recommend that equity analyses should examine sensitivity of the results to the threshold used. Prior to selecting a threshold to use for an in-depth analysis of trip characteristics, this section examines how varying the threshold affects the demographics and the performance metrics of the resulting samples. The demographics and performance metrics of the sample are calculated for a sample formed by using each integer threshold between 0% and 100% for the White Alone and Black or African American demographics.
 
-![](../images/media/image30.png)
+![Figure 5-10](../images/media/image30.png)
 <span id="_Ref416585136" class="anchor"><span id="_Toc423368645" class="anchor"></span></span>Figure 5.10 Census tracts above FTA Black or White commuter threshold
 
 #### How Varying the Threshold Changes the Sample Demographics
@@ -127,16 +131,17 @@ The FTA guidance requires thresholds to be based on area averages, however these
 
 For example, the tracts in Figure 5.11 exclude tracts exceeding the area average proportion of White Alone commuters. Selecting the most permissive threshold of 0% still results in 12% of Black or African American commuters being excluded from the sample (the green line). At the FTA threshold of 15.3% Black (the black vertical dashed line), 76% of Black commuters are included in the sample, but they are not a majority of commuters in the sample (the magenta line). By selecting a threshold between approximately 20% and 50%, the sample would ensure that Black or African Americans are the majority in the sample, while the majority of Black or African Americans are included in the sample. The reference population of White Alone commuters would be between 25% and below 10% (the blue line).
 
-![](../images/media/image31.png)
+![Figure 5-11](../images/media/image31.png)
 <span id="_Ref418105984" class="anchor"><span id="_Toc419766915" class="anchor"><span id="_Toc423368646" class="anchor"></span></span></span>Figure 5.11 Sample Demographics as Black Threshold Varies
 
 Figure 5.12 shows that White Alone commuters make up a majority of commuters in tracts that have a below average proportion of Black or African American commuters. Above the FTA threshold (the black dotted line), the sample has a majority White Alone population (78%) while including 73% of White Alone commuters. The sample would exclude a majority of White Alone commuters when using a threshold above 75%. Thus the FTA threshold would be inappropriate for selecting a sample of tracts housing Black or African American commuters, but would be reasonable for sampling the White Alone population.
 
-![](../images/media/image32.png)
+![Figure 5-12](../images/media/image32.png)
 <span id="_Ref418105985" class="anchor"><span id="_Toc419766916" class="anchor"><span id="_Toc423368647" class="anchor"></span></span></span>Figure 5.12 Sample Demographics as White Threshold Varies
 
 For the 80 tracts which fall below both the White Alone threshold and the Black or African American threshold (see Figure 5.10 for their locations), Figure 5.13 shows their demographic breakdown. A majority of the 45,683 public transit commuters in these tracts are White, either non-Hispanic or White Hispanic.
 
+![Figure 5-13](../images/media/figure_5_13.png)
 <span id="_Ref418618616" class="anchor"><span id="_Toc419766917" class="anchor"><span id="_Toc423368648" class="anchor"></span></span></span>Figure 5.13 Demographic Proportion of Tracts below the FTA Thresholds for White Alone and Black or African American Commuters
 
 #### How Varying the Threshold Affects Performance Metrics
@@ -147,7 +152,7 @@ Figure 5.14 shows how the straight-line speed for each mode varies with the sele
 
 Above the 70% threshold for Black or African American tracts and the 80% threshold for White Alone ones, the speed varies considerably as the sample shrinks to below 25% and 35% of the respective demographics.
 
-![](../images/media/image33.png)
+![Figure 5-14](../images/media/image33.png)
 <span id="_Ref418622412" class="anchor"><span id="_Toc419766918" class="anchor"><span id="_Toc423368649" class="anchor"></span></span></span>Figure 5.14 Average Straight-line Speed by Mode and by Varying Thresholds
 
 Also notable is that journey speeds slow as the concentration of Black or African Americans in the sample increases. A similar phenomenon can be observed with White Alone rail speeds, though bus and mixed speeds indicate no clear trends.
@@ -156,15 +161,15 @@ Figure 5.15 shows that travel times tend to increase as the concentration of Bla
 
 This increasing in journey times for commuters in Black or African American tracts is not due to these commuters living farther away as the concentration increases, Figure 5.16 shows that average journey distances do not increase as the threshold increases. Moreover, as one might expect due to their location, average journey distances are slightly shorter than for commuters from White Alone tracts. This also disproves the spatial mismatch theory that destinations are located further for Black or African American residents than for White ones.
 
-![](../images/media/image34.png)
+![Figure 5-15](../images/media/image34.png)
 <span id="_Ref418693671" class="anchor"><span id="_Toc419766919" class="anchor"><span id="_Toc423368650" class="anchor"></span></span></span>Figure 5.15 Average Journey Time by Mode for Varying Thresholds
 
-![](../images/media/image35.png)
+![Figure 5-16](../images/media/image35.png)
 <span id="_Ref418695030" class="anchor"><span id="_Toc419766920" class="anchor"><span id="_Toc423368651" class="anchor"></span></span></span>Figure 5.16 Average Straight-line Distance for Varying Thresholds
 
 Despite no increase in journey distance as the concentration of Black or African American commuters increases, the number of transfers required to complete these journeys increases. The proportion of trips requiring at least one transfer increases from over 35% to 55% at a Black proportion of 70% (Figure 5.17). Over the same range the proportion of trips requiring at least two transfers increases by over 5%. Meanwhile the proportion of trips requiring more than 1 transfer for commuters from White Alone tracts barely goes above 35%. This indicates that the network is not currently configured to serve trips from Black or African American tracts very well, since shorter distances should not require more transfers.
 
-![](../images/media/image36.png)
+![Figure 5-17](../images/media/image36.png)
 <span id="_Ref418711563" class="anchor"><span id="_Toc419766921" class="anchor"><span id="_Toc423368652" class="anchor"></span></span></span>Figure 5.17 Number of Segments Required per Trip for Varying Thresholds
 
 There is therefore evidence for a difference in journey speed (Figure 5.14) and journey times (Figure 5.15) between commuters in Black or African American tracts versus commuters in White Alone tracts. It is telling that a population with lower average distances travelled (Figure 5.16) who, given its location, should have better access, instead has longer travel times and lower speeds. This is partially due to these trips requiring more transfers (Figure 5.17), an indication that the network is not configured to serve these trips as efficiently as trips made from other zones. The increase in transfers causes an increase not only in actual travel time, but also in perceived travel time, as commuters tend to perceive waiting time as more onerous than in-vehicle travel time. It also decreases journey reliability, as the possibility of missing a connection increases potential journey time.
@@ -190,11 +195,12 @@ Table 5.3 shows the demographics for the two samples used in this section with t
 
 Figure 5.18 shows a map of the tracts. The Black tracts are close to the core, and principally in the region between the southwest ends of the Orange and Red Lines. The White tracts within the core are downtown along the Orange and Red Lines or along the branches of the Green Line. Otherwise they are out at the termini of the Orange and Red Lines, and occupy most of the suburbs. One would expect the White Alone trips to be further, and bus trips to tend to be on express commuter buses.
 
-![](../images/media/image37.png)
+![Figure 5-18](../images/media/image37.png)
 <span id="_Ref418717580" class="anchor"><span id="_Toc423368653" class="anchor"></span></span>Figure 5.18 Census Tracts above Black or White Commuter Thresholds (40% Black threshold, 70% White threshold)
 
 Figure 5.19 shows the mode split by demographic. Commuters from Black or African American tracts tend to use bus and the combination of bus and rail much more than commuters from White Alone tracts.
 
+![Figure 5-19](../images/media/figure_5_19.png)
 <span id="_Ref418719835" class="anchor"><span id="_Toc419766922" class="anchor"><span id="_Toc423368654" class="anchor"></span></span></span>Figure 5.19 Mode Split by Demographic
 
 ### Wait Time Inference for Bus Stages at the Beginning of a Journey
@@ -263,10 +269,10 @@ Due to the assumptions required for inferring waiting times for bus stages, and 
 The difference in travel speeds presented in Table 5.5 is partially due to users from Black or African American tracts making more transfers to get to their destination. Figure 5.20 shows that for a given distance, journeys from Black or African American tracts tend to require more transfers than those from White Alone tracts. Below that figure, Figure 5.21 shows the distribution of straight-line distances to indicate the relative frequency of trips being made of a given distance.
 
 Of the 42% of trips from Black or African American tracts which are made between distances of 5 and 10 km, 56% of them require one or more transfers, compared to only 42% of trips from White Alone tracts over that same distance range. For journeys between 10 and 20 km, 9% of trips from Black or African American tracts, 81% of trips require more than one transfer, compared to only 53% of trips from White Alone tracts. This relative inaccessibility of the network, when, as the map in Figure 5.18 shows, Black tracts are mostly centrally located, suggests that the network has not been configured for the needs of Black or African American commuters. An increased number of transfers decreases trip reliability due to the possibility of a missed connection, and increases perceived travel time due to increased wait time.  
-![](../images/media/image38.png)
+![Figure 5-20](../images/media/image38.png)
 <span id="_Ref421797187" class="anchor"><span id="_Ref421796005" class="anchor"><span id="_Toc423368655" class="anchor"></span></span></span>Figure 5.20 Distribution of Segments Required for Trips by Distance and Threshold
 
-![](../images/media/image39.png)
+![Figure 5-21](../images/media/image39.png)
 <span id="_Ref418722367" class="anchor"><span id="_Toc419766923" class="anchor"><span id="_Toc423368656" class="anchor"></span></span></span>Figure 5.21 Distribution of Straight-Line Distance by Threshold
 
 The increased number of transfers has implications for journey speed: average bus speed drops by 5km/hr after 1 transfer, as shown in Table 5.7. The table contains the average straight-line speed aggregated by mode, threshold, and number of segments while also showing the relative proportion of trips for a given mode requiring a given number of segments. Cells in the table with fewer than 100 trips were excluded.
@@ -302,13 +308,13 @@ Speeds tend to increase with distance, and, for reasons identified above, speeds
 
 Between 3 and 4km, the location of the peak in White Alone bus trips, the average speed for White Alone trips is actually 0.7 km/hr slower than for Black or African American trips. However, this is mitigated by speeds below 3 km being faster for White Alone trips. Aggregating bus trips from 500 to 4000m, which include 69% of Black or African American bus trips and 65% of White Alone ones, shows no difference in average speed. This reveals the importance of examining distributions, since the speed difference is null in the range where the bulk of bus trips are made, but the difference is substantial over medium distances.
 
-![](../images/media/image40.png)
+![Figure 5-22](../images/media/image40.png)
 <span id="_Ref418816240" class="anchor"><span id="_Toc419766924" class="anchor"><span id="_Toc423368657" class="anchor"></span></span></span>Figure 5.22 Average Straight-line Speeds by Journey Distance and by Mode
 
-![](../images/media/image41.png)
+![Figure 5-23](../images/media/image41.png)
 <span id="_Ref416818144" class="anchor"><span id="_Toc419766925" class="anchor"><span id="_Toc423368658" class="anchor"></span></span></span>Figure 5.23 Journey Straight-line Distance Distributions by Mode
 
-![](../images/media/image42.png)
+![Figure 5-24](../images/media/image42.png)
 <span id="_Ref418981350" class="anchor"><span id="_Toc419766926" class="anchor"><span id="_Toc423368659" class="anchor"></span></span></span>Figure 5.24 Distribution of Bus Segments Required for Trips by Distance and Threshold
 
 Figure 5.25 shows the distributions of start times for the journeys in both of the samples. For all modes commuters from Black tracts have a greater spread of start times than those from White tracts, with the difference in distributions greatest for bus trips. The greater proportion of trips outside of the peak could play a factor in lower trip speeds. In order to investigate whether this spreading of travel start time lowers average speeds, Table 5.9 shows how average speeds vary by time of day.
@@ -328,7 +334,7 @@ Average speeds are typically faster in the early morning and then slow as the da
 | **Midday School \[13:30,16:00)** | 11.7      | 8.0%      | 13.7      |
 | All                              | 12.7      | 14.5      | 11.9      |
 
-![](../images/media/image43.png)
+![Figure 5-25](../images/media/image43.png)
 <span id="_Ref421045013" class="anchor"><span id="_Toc423368660" class="anchor"></span></span>Figure 5.25 Distribution of Start Times by Mode and Threshold
 
 Rail is the only mode where journey speeds from Black tracts meet or exceed those from White tracts. This happens during the midday periods. Table 5.10 explores in greater depth the potential reasons for travel speed differences for heavy rail users by time of day, and why the gap might close during the midday. The “%Trips” column shows the proportion of trips made during that time period by users for a given sample on a given mode. Because only trips beginning on lines with substantial ridership are included, the values in %Trips will add up to close to 100% for a given sample and time period.
@@ -351,7 +357,7 @@ The closing of the gap during the midday is due to a combination of the gap in R
 
 All of the factors discussed above lead to the distributions of travel times by mode in Figure 5.26 below. Commuters from Black or African American tend to have both shorter and longer bus trips than those from White Alone tracts. The latter is due to medium-length trips being slower and requiring more transfers. For trips requiring a combination of bus and rail, the distribution of journey times is overall longer for commuters from Black tracts, again due to slower speeds and more transfers required. For rail trips, the middle of the distribution is shifted to the right for commuters from Black or African American tracts due to the relative speed of the Orange Line and Ashmont branch of the Red Line versus the trunk and Braintree branch of the Red Line. The next section, 5.4.3, will explore more specific areas for improvement based on these finding, leading to strategies to reduce these travel time differences that are suggested in section 5.6 below.
 
-![](../images/media/image44.png)
+![Figure 5-26](../images/media/image44.png)
 <span id="_Ref417414298" class="anchor"><span id="_Toc419766927" class="anchor"><span id="_Toc423368661" class="anchor"></span></span></span>Figure 5.26 Journey Time Distribution by Tract Threshold and Mode<span id="_Toc419766939" class="anchor"></span>
 
 ### Mode-level Analysis 
@@ -456,7 +462,7 @@ Transfers could be made easier by regulating departures by using an even-headway
 
 The benefits of through-routing select bus routes can also be estimated from the data by assuming new journey times without transfer times for multi-stage trips for any proposed through-route pair. Table 5.15 shows the ten bus to bus transfers where passengers spend the most aggregate time transferring. Ordering route pairs by this metric shows for which route-pairs through-routing will have the greatest reduction in journey times. The third column shows the estimated benefits from through-routing a particular route pair as the percent impact of eliminating the transfer time on the overall average travel time difference of 3.1 minutes between Black and White trips.
 
-![](../images/media/image45.png)
+![Figure 5-27](../images/media/image45.png)
 <span id="_Ref418963782" class="anchor"><span id="_Toc423368662" class="anchor"></span></span>Figure 5.27 Top 15 Destination for Bus Journeys Requiring 1+ Transfers Scaled by Demand, Coloured by Average Speed
 
 The 32 to 39, the most heavily used combination of bus routes is not as good a candidate as the 28 to the 01 because it already has relatively good speeds. However, it would still be an ideal candidate for merging since there already exists a variation of the 32 which follows the 39’s route to the Longwood Medical Area. The main destinations accessed from the users transferring to the 01 are clustered near the Boston Medical Center, as well as Central Square in Cambridge to a lesser extent (see Figure 5.27). Through-routing either the 23 or the 28 through Dudley to this area could provide a one-seat ride for a number of trips transferring from the 23 or 28 to the 01, or the Silver Line 4 or 5.
@@ -479,7 +485,7 @@ Theoretically, eliminating all bus to bus transfers would reduce the gap in aver
 | 23-&gt;749             | 4.0                         | 0.3%                                                    | 0.6%                    |
 | Remaining Combinations | 7.6                         | 31.1%                                                   | 59.2%                   |
 
-![](../images/media/image46.png)
+![Figure 5-28](../images/media/image46.png)
 <span id="_Ref420062011" class="anchor"><span id="_Toc423368663" class="anchor"></span></span>Figure 5.28 Map of 10 Bus Transfer Points where Passengers Spend the Most Time (Circle Area Scaled by Total Passenger Waiting Time and Coloured by Average Waiting Time)
 
 ##### Regulating Departures
@@ -526,7 +532,7 @@ These findings are subject to the limitations outlined in Table 5.17, and their 
 
 Journey (i.e. transfer) inference is conservative, as the parameters currently assigned to the algorithm tend to under-infer transfers. Given the higher proportion of journeys requiring multiple stages from Black or African American tracts, the inferred proportion of those journeys may be disproportionately low. Thus this analysis may contain a greater number of shorter, faster trips from Black tracts when in reality these may be linked into longer, slower ones.
 
-![](../images/media/image47.png)
+![Figure 5-29](../images/media/image47.png)
 <span id="_Ref418967406" class="anchor"><span id="_Toc419766928" class="anchor"><span id="_Toc423368664" class="anchor"></span></span></span>Figure 5.29 Map of Top 15 Destination for Bus-&gt;Rail Journeys (Circle Areas Scaled by Demand and Coloured by Average Speed)
 
 This analysis focused exclusively on journeys from home areas as a proxy for the journey to work. It is unclear whether the transit experience of non-regular users would be better or worse, and whether it would affect users of different races or ethnicities differently. For commuters who travel to work after 3PM, it is likely that they face worse service with respect to headways and network connectivity, but may enjoy faster and more reliable bus and train service.
@@ -627,12 +633,12 @@ The top 10 OD pairs are listed in below. The general direction is inbound and in
 | Uphams Corner         | Newmarket           | 424                     |
 | Four Corners / Geneva | Talbot Avenue       | 417                     |
 
-![](../images/media/image48.png)
+![Figure 5-30](../images/media/image48.png)
 <span id="_Ref420053579" class="anchor"><span id="_Toc423368665" class="anchor"></span></span>Figure 5.30 Map of Fairmount Stations with 800 m (1/2 mile) Buffer
 
 New travel times are calculated with the assumption that users walk from their home location to the nearest Fairmount station and then travel to the nearest Fairmount station to their original destination and walk to the destination. Under this assumption 50% of trips currently being made along the corridor switch to the Fairmount Line, benefiting from an average travel time decrease of 13.5 minutes. Of the trips making the switch 52% are bus to rail, 44% bus, and 4% are rail. This decreases average travel times in the corridor by 6.8 minutes, from 33.1 minutes to 26.3 minutes. Figure 5.31 shows the distribution of trip times along the corridor before and after. The dramatic decrease in trip times above 45 minutes is notable. Table 5.19 shows the benefits aggregated by the number of segments the original trip had. As the number of segments initially required to travel from origin to destination increases, the benefits of the Fairmount Line and the single-stage journey it offers increases. Only 21% of trips with only one stage switch to the Fairmount Line, but 81% of two-stage journeys benefit from changing to the Fairmount Line.
 
-![](../images/media/image49.png)
+![Figure 5-31](../images/media/image49.png)
 <span id="_Ref419765491" class="anchor"><span id="_Toc419766929" class="anchor"><span id="_Toc423368666" class="anchor"></span></span></span>Figure 5.31 Journey Time Distribution for Trips within Fairmount Corridor
 
 Recalculating the overall average journey times taking into account the trips switched to the Fairmount branch for commuters from Black or African American tracts reveals an overall average decrease of 0.3 minutes from 32.6 minutes to 32.3 minutes. This results in a decrease in the gap in average travel times between Black tracts and White tracts by nearly 10%. This is a low estimate of the benefits of these improvements, since the number of users who may want to transfer to or from the Fairmount Line is much higher than the five percent of trips which can be completed by walking to the line.
@@ -685,7 +691,7 @@ The results for the three types of trips are in Table 5.22 below. The aggregate 
 | Origin on a bus route intersecting with the Fairmount Line Destination requiring a transfer at South Station           | 12.2                     | 1.3%                                           | 5.2%                               |
 | Origin on a bus route intersecting with the Fairmount Line Destination within walking distance of Fairmount Line       | 12.1                     | 0.8%                                           | 3.2%                               |
 
-![](../images/media/image50.png)
+![Figure 5-32](../images/media/image50.png)
 <span id="_Ref421780350" class="anchor"><span id="_Toc423368667" class="anchor"></span></span>Figure 5.32 Map of Destination Area for Which Transferring to Fairmount Line Might Provide Travel TIme Benefits
 
 Summing all the potential benefits together brings an aggregate impact of a reduction of nearly 35% in the travel time difference between commuters from Black tracts and commuters from White tracts. Given the potential, this warrants more disaggregate analysis to fully estimate the benefits by modelling the paths of all trips to determine individual benefits. With a shortest-path model of the transit network it would be possible to estimate the new travel times for each individual and recalculate average travel times as above. Beyond the short-term travel time benefits, the analysis should consider how making accessible destinations for which travel took too long may result in users changing their travel patterns and employment. In particular, the Seaport District, which is a short walk or ride on the Silver Line from South Station, is rapidly growing (Gordon, 2015). The Fairmount provides good access to these new jobs becoming available in the coming years. Additionally, access to job centers such as the Longwood Medical Area and Copley Square by transferring from the Fairmount to buses to these areas should be further investigated.

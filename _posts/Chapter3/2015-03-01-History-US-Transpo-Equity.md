@@ -192,7 +192,8 @@ After identifying causes, potential solutions can be proposed. This concluding s
 
 ### Most Recent ACS
 
-The analysis below uses the 5-year estimates for 2013, the most recent year for which data is available. ACS data is available in PUMS (see section 3.4 for a description). Any PUMA which intersects an MBTA bus or rapid transit route was used (Figure 3.1). Only responses for people who commuted by bus, streetcar, and heavy rail commuters were used.![](../images/media/image12.png)
+The analysis below uses the 5-year estimates for 2013, the most recent year for which data is available. ACS data is available in PUMS (see section 3.4 for a description). Any PUMA which intersects an MBTA bus or rapid transit route was used (Figure 3.1). Only responses for people who commuted by bus, streetcar, and heavy rail commuters were used.  
+![Figure 3-1](../images/media/image12.png)
 <span id="_Ref413190582" class="anchor"><span id="_Toc413249442" class="anchor"><span id="_Toc419415980" class="anchor"><span id="_Toc423368616" class="anchor"></span></span></span></span>Figure 3.1 PUMAs which intersect MBTA Rapid Transit or Bus
 
 Table 3.2 shows the average commute time for users who travelled by public transit (bus, rail, or LRT) by different race or ethnicities. Only commuters who identify as White and Other have an average commute time below the average population, with the greatest difference being between those who identify as Black or African American, and those who identify as White. The proportion of bus riders who are White is 52%, which is comparable to the CTPS 2010 survey value of 53%, however there is a difference of 10% between the ACS 63% White Rapid Transit riders and the CTPS 73% White proportion.
@@ -211,15 +212,15 @@ Table 3.2 shows the average commute time for users who travelled by public trans
 
 The distribution of these travel times is important, and the distributions for Asian and Black or African American commuters are shown in Figure 3.2 and Figure 3.3, with the White Alone population as reference. The graphs are smoothed using a kernel density because respondents tend to report their travel times in 10 or 15 minute increments. Given the discrete nature of responses, and their clustering in 15 minute increments, smoothing was applied to the graphs. The Asian distribution is similar to the White Alone one except for a shift to the right, with increased proportions of trips taking 45, 60, and 90 minutes. The Black or African American distribution shows a slightly greater proportion of commuters with really short travel times, but mostly the distribution also shows a substantial proportion of lengthier commutes, in particular above 60 and 90 minutes.
 
-![](../images/media/image13.png)
+![Figure 3-2](../images/media/image13.png)
 <span id="_Ref419367489" class="anchor"><span id="_Toc413249446" class="anchor"><span id="_Toc419415981" class="anchor"><span id="_Toc423368617" class="anchor"></span></span></span></span>Figure 3.2 Journey to Work Time Distribution for Asian (Source: ACS 5-year 2013)
 
-![](../images/media/image14.png)
+![Figure 3-3](../images/media/image14.png)
 <span id="_Ref412753172" class="anchor"><span id="_Toc413249447" class="anchor"><span id="_Toc419415982" class="anchor"><span id="_Toc423368618" class="anchor"></span></span></span></span>Figure 3.3 Journey to Work Time Distribution for Black or African American (Source: ACS 5-year 2013)
 
 Since the Black-White differential is the highest, it will be the focus of this analysis since causes for travel time differences might be more readily apparent, and potential solutions could have a greater impact on reducing gaps in travel time. In the absence of survey data directly linking ethnicity to farecard data, it is necessary to infer this by other means. Chapter 4 will present a methodology for inferring home locations from observed travel, and how these locations can be linked to census demographics by tract. It is important to note that this is only possible within regions where public transit usage is spatially heterogeneous across demographic variables of interest such as race. If the population were well mixed, it would be impossible to examine how demographics play a role in transit provision without directly linking users’ ethnicity with their fare data. Figure 3.4 compares residential location of public transit commuters who identify as White and those who identify as Black or African American according to the American Community Survey (2013). Data is aggregated to census tracts instead of the PUMAs used above however “public transit” in this dataset includes commuter rail and commuter boat users. The thick black line was drawn around tracts which have a high concentration of Black transit users. This area, roughly representing the neighborhoods of Roxbury, Dorchester, and Mattapan, is 22.1% White, 58.6% Black and contains 21,504 Black public transit commuters. Assuming none of these Black public transit users commute via commuter rail, this represents roughly 2/3 of the Black rapid transit commuters in the MBTA’s service area.
 
-![](../images/media/image15.png)
+![Figure 3-4](../images/media/image15.png)
 <span id="_Toc423368619" class="anchor"></span>Figure 3.4 Public Transit Commuters by Race: Black and White
 
 ## Summary
