@@ -72,16 +72,162 @@ Based on these findings, some recommendations were made and evaluated for interv
 
 <span id="_Ref421266786" class="anchor"></span>Table 6.3 Summary of Potential Solutions
 
-|                        | Potential Solution                                                | Potential Impact on Travel Time Difference (% of Current Gap) | Comments                                                                                                 |
-|------------------------|-------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Operations             | Improve Bus Departure Reliability at Dudley and Forest Hills      | 2%                                                            | Doesn’t include wait time reductions for users starting journeys at those stations.                      |
-|                        | Through-routing most Heavily Used Bus Route Pairs                 | 0.3%-1.0% per route                                           |                                                                                                          |
-| Fare                   | Reduce Commuter Rail Fares at Hyde Park                           | Further analysis required                                     |                                                                                                          |
-| Capital Improvements   | *Rapid Transit Frequencies on the Fairmount Line*                 | *25-35%*                                                      | *Use of a network model to examine all disaggregate benefits to users who could use the line required. * |
-|                        | Increase Heavy Rail Frequencies on Orange Line and Ashmont Branch | Further analysis required                                     |                                                                                                          |
-|                        | Reconfigure Bus Network                                           | Further analysis required                                     | Examine bus speed improvements from BRT                                                                  
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                              Examine benefits from reorganizing bus network to reduce transfers                                        |
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0"
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td valign="top" style='width:35.75pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  </td>
+  <td vtyle='width:135.0pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Potential Solution</p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Potential Impact on Travel
+  Time Difference (% of Current Gap)</p>
+  </td>
+  <td vtyle='width:184.25pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Comments</p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan="2" style='width:35.75pt;border-top:none;border-left:solid windowtext 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="center" style='margin-top:0in;margin-right:5.65pt;
+  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'>Operations</p>
+  </td>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Improve Bus Departure
+  Reliability at Dudley and Forest Hills</p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal">2%</p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Doesn’t include wait time
+  reductions for users starting journeys at those stations.</p>
+  </td>
+ </tr>
+ <tr style='height:37.3pt'>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:37.3pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Through-routing most
+  Heavily Used Bus Route Pairs</p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:37.3pt'>
+  <p class="MsoNormal">0.3%-1.0% per route</p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:37.3pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid;height:39.55pt'>
+  <td vtyle='width:35.75pt;border-top:none;border-left:solid windowtext 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
+  <p class="MsoNormal" align="center" style='margin-top:0in;margin-right:5.65pt;
+  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'>Fare</p>
+  </td>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Reduce Commuter Rail Fares
+  at Hyde Park</p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
+  <p class="MsoNormal">Further analysis required</p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan="3" style='width:35.75pt;border-top:none;border-left:solid windowtext 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="center" style='margin-top:0in;margin-right:5.65pt;
+  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'>Capital
+  Improvements</p>
+  </td>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'><u>Rapid Transit
+  Frequencies on the Fairmount Line</u></p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal"><u>25-35%</u></p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'><u>Use of a network model
+  to examine all disaggregate benefits to users who could use the line
+  required. </u></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Increase Heavy Rail
+  Frequencies on Orange Line and Ashmont Branch</p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal">Further analysis required</p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Reconfigure Bus Network </p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal">Further analysis required</p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Examine bus speed
+  improvements from BRT<br>
+  Examine benefits from reorganizing bus network to reduce transfers</p>
+  </td>
+ </tr>
+</table>
 
 Given the greater reliance on bus, and the increased need to make bus to bus transfers, improving the reliability of departures at Dudley Square and Forest Hills, terminals where users are transferring would improve transfer times. This would result in a decrease in the difference in average travel times by 2%. Furthermore it would decrease in-vehicle travel times on routes departing those terminals and waiting times for users starting their bus journeys on those routes.
 

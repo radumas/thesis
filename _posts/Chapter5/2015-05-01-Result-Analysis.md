@@ -1,6 +1,6 @@
 ---
 title: "Chapter 5: Analysis of Spatial Variation in Transit Travel Times Using OD Data"
-layout: post
+layout: post_doc
 section: results
 nosidebar: true
 ---
@@ -278,17 +278,525 @@ Of the 42% of trips from Black or African American tracts which are made between
 The increased number of transfers has implications for journey speed: average bus speed drops by 5km/hr after 1 transfer, as shown in Table 5.7. The table contains the average straight-line speed aggregated by mode, threshold, and number of segments while also showing the relative proportion of trips for a given mode requiring a given number of segments. Cells in the table with fewer than 100 trips were excluded.
 
 <span id="_Ref421796683" class="anchor"></span>Table 5.7 Straight-line Speed (km/hr) by Mode, Threshold, and Number of Segments
-
-| Segments   | **Bus**                       | **Mixed**       | **Rail**                      |
-|------------|-------------------------------|-----------------|-------------------------------|
-|            | **Black or African American** | **White Alone** | **Black or African American** |
-|            | **Speed**                     | **Trips**       | **Speed**                     |
-| 1          | 14.1                          | 73%             | 15.0                          |
-| 2          | 9.3                           | 25%             | 9.7                           |
-| 3          | 8.1                           | 2.1%            | 7.8                           |
-| 4          |                               |                 |                               |
-| **Ave**   | **12.7**                      | **14.5**        | **11.9**                      |
-
+{% raw %}
+<table class="MsoTableGrid" 
+style="width:100.0%;border-collapse:collapse;border:none">
+<tr style="height:23.8pt">
+<td rowspan="3" style="width:6.7%;border:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:23.8pt">
+<p class="MsoNoSpacing" align="center" style="margin-top:0in;margin-right:5.65pt;
+margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center;
+page-break-after:avoid"><span style="font-size:11.0pt;line-height:115%">Segments</span></p>
+</td>
+<td colspan="4" style="width:31.3%;border:solid windowtext 1.0pt;
+border-left:none;padding:0in 5.4pt 0in 5.4pt;height:23.8pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b>Bus</b></p>
+</td>
+<td colspan="4" style="width:31.1%;border:solid windowtext 1.0pt;
+border-left:none;padding:0in 5.4pt 0in 5.4pt;height:23.8pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b>Mixed</b></p>
+</td>
+<td colspan="4" style="width:30.88%;border:solid windowtext 1.0pt;
+border-left:none;padding:0in 5.4pt 0in 5.4pt;height:23.8pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b>Rail</b></p>
+</td>
+</tr>
+<tr style="height:62.5pt">
+<td colspan="2" style="width:15.68%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:62.5pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b>Black or African American</b></p>
+</td>
+<td colspan="2" style="width:15.62%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:62.5pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b>White Alone</b></p>
+</td>
+<td colspan="2" style="width:15.56%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:62.5pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b>Black or African American</b></p>
+</td>
+<td colspan="2" style="width:15.56%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:62.5pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b>White Alone</b></p>
+</td>
+<td colspan="2" style="width:15.56%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:62.5pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b>Black or African American</b></p>
+</td>
+<td colspan="2" style="width:15.34%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:62.5pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+line-height:normal;page-break-after:avoid"><b>White Alone</b></p>
+</td>
+</tr>
+<tr style="height:15.0pt">
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Speed</span></b></p>
+</td>
+<td style="width:7.9%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Trips</span></b></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Speed</span></b></p>
+</td>
+<td style="width:7.84%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Trips</span></b></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Speed</span></b></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Trips</span></b></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Speed</span></b></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Trips</span></b></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Speed</span></b></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Trips</span></b></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+line-height:normal;page-break-after:avoid"><b><span style="font-size:9.0pt">Speed</span></b></p>
+</td>
+<td style="width:7.56%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-size:9.0pt;line-height:115%">Trips</span></b></p>
+</td>
+</tr>
+<tr style="height:15.0pt">
+<td style="width:6.7%;border:solid windowtext 1.0pt;
+border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="center" style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:center;page-break-after:avoid">1</p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">14.1</span></p>
+</td>
+<td style="width:7.9%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">73%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">15.0</span></p>
+</td>
+<td style="width:7.84%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">91%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt"></td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid">&nbsp;</p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid">&nbsp;</p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid">&nbsp;</p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">13.1</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">75%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;line-height:normal;page-break-after:avoid"><span
+style="font-size:11.0pt;font-family:'Calibri','sans-serif';color:black">13.5</span></p>
+</td>
+<td style="width:7.56%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;font-family:'Calibri','sans-serif';
+color:black;">79%</span></p>
+</td>
+</tr>
+<tr style="height:15.0pt">
+<td style="width:6.7%;border:solid windowtext 1.0pt;
+border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="center" style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:center;page-break-after:avoid">2</p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">9.3</span></p>
+</td>
+<td style="width:7.9%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">25%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">9.7</span></p>
+</td>
+<td style="width:7.84%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">8.7%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">12.5</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">69%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">13.1</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">76%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">10.5</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">23%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;line-height:normal;page-break-after:avoid"><span
+style="font-size:11.0pt;font-family:'Calibri','sans-serif';color:black">10.7</span></p>
+</td>
+<td style="width:7.56%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;font-family:'Calibri','sans-serif';
+color:black">20%</span></p>
+</td>
+</tr>
+<tr style="height:15.0pt">
+<td style="width:6.7%;border:solid windowtext 1.0pt;
+border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="center" style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:center;page-break-after:avoid">3</p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">8.1</span></p>
+</td>
+<td style="width:7.9%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">2.1%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">7.8</span></p>
+</td>
+<td style="width:7.84%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">0.4%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">10.9</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">26%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">11.3</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">22%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">5.7</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">1.8%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt"></td>
+<td style="width:7.56%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt"></td>
+</tr>
+<tr style="height:15.0pt">
+<td style="width:6.7%;border:solid windowtext 1.0pt;
+border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="center" style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:center;page-break-after:avoid">4</p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt"></td>
+<td style="width:7.9%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt"></td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid">&nbsp;</p>
+</td>
+<td style="width:7.84%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid">&nbsp;</p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">8.4</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">4.6%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">8.8</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid"><span style="font-size:11.0pt;
+line-height:115%;font-family:'Calibri','sans-serif';color:black">1.7%</span></p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt"></td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;page-break-after:avoid">&nbsp;</p>
+</td>
+<td style="width:7.78%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt"></td>
+<td style="width:7.56%;border-top:none;border-left:none;
+border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="right"  style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:right;line-height:normal;page-break-after:avoid">&nbsp;</p>
+</td>
+</tr>
+<tr style="height:15.0pt">
+<td valign="bottom" style="width:6.7%;border:solid windowtext 1.0pt;
+border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" style="margin-bottom:0in;margin-bottom:.0001pt;
+page-break-after:avoid"><b><span style="font-family:'Calibri','sans-serif';
+color:black">Ave </span></b></p>
+</td>
+<td colspan="2" style="width:15.68%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="center" style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:center;page-break-after:avoid"><b><span style="font-size:
+11.0pt;line-height:115%;font-family:'Calibri','sans-serif';color:black">12.7</span></b></p>
+</td>
+<td colspan="2" style="width:15.62%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="center" style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:center;page-break-after:avoid"><b><span style="font-size:
+11.0pt;line-height:115%;font-family:'Calibri','sans-serif';color:black">14.5</span></b></p>
+</td>
+<td colspan="2" style="width:15.56%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="center" style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:center;page-break-after:avoid"><b><span style="font-size:
+11.0pt;line-height:115%;font-family:'Calibri','sans-serif';color:black">11.9</span></b></p>
+</td>
+<td colspan="2" style="width:15.56%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="center" style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:center;page-break-after:avoid"><b><span style="font-size:
+11.0pt;line-height:115%;font-family:'Calibri','sans-serif';color:black">12.6</span></b></p>
+</td>
+<td colspan="2" style="width:15.56%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="center" style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:center;page-break-after:avoid"><b><span style="font-size:
+11.0pt;line-height:115%;font-family:'Calibri','sans-serif';color:black">12.4</span></b></p>
+</td>
+<td colspan="2" style="width:15.34%;border-top:none;
+border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+padding:0in 5.4pt 0in 5.4pt;height:15.0pt">
+<p class="MsoNoSpacing" align="center" style="margin-bottom:0in;margin-bottom:
+.0001pt;text-align:center;line-height:normal;page-break-after:avoid"><b><span
+style="font-size:11.0pt;font-family:'Calibri','sans-serif';color:black">12.8</span></b></p>
+</td>
+</tr>
+</table>
+{% endraw %}
 Except for rail journeys with 3 segments, for no other combination do commuters from Black or African American tracts have faster average speeds, with the difference in speed greater for journeys with fewer segments, and in particular for single speed bus trips. The bus speed differential is the combination of slower speeds, and the need to transfer more often, leading to the differences in average speed in the bottom row.
 
 The rail speed differential is a combination of trips being slower on the Ashmont branch of the Red Line, and more commuters from Black or African American tracts taking the slower Orange Line (see system schematic in Figure 2-3) as shown in Table 5.8. The greater speed on the Red Line can be explained by two factors: trips originating in downtown Boston, Cambridge and Somerville will have half the headways as trips on the branches because the trains from both branches run on the trunk. The second is that trips on the Braintree branch are likely faster because of greater stop spacing, and the trips are a longer distance, so platform wait time is a smaller component of the journey time. The Green Line trips originate in the Central Subway and neither sample had a substantial proportion of trips on the Blue Line.
@@ -297,12 +805,147 @@ Commuters from White Alone tracts benefit from faster average bus speeds because
 
 <span id="_Ref421796209" class="anchor"></span>Table 5.8 Rail Speed by Line for Trips with only 1 Segment
 
-| **Line** | **Average Straight Line Speed(km/hr)** | **Proportion of Trips** |
-|----------|----------------------------------------|-------------------------|
-|          | **Black or African American**          | **White Alone**         |
-| Green    | 6.6                                    | 7.4                     |
-| Orange   | 12.2                                   | 11.9                    |
-| Red      | 14.1                                   | 15.2                    |
+<div>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr style='height:15.0pt'>
+  <td width="15%" nowrap rowspan="2" valign="top" style='width:15.34%;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'><b>Line</b></p>
+  </td>
+  <td width="42%" nowrap colspan="2" valign="top" style='width:42.32%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'><b>Average Straight Line Speed(km/hr)</b></p>
+  </td>
+  <td width="42%" nowrap colspan="2" valign="top" style='width:42.34%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'><b>Proportion of Trips</b></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'><b>Black or African American</b></p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'><b>White Alone</b></p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'><b>Black or African American</b></p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.18%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'><b>White Alone</b></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width="15%" nowrap valign="top" style='width:15.34%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>Green </p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>6.6</p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>7.4</p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>1.4%</p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.18%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>8.6%</p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width="15%" nowrap valign="top" style='width:15.34%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>Orange </p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>12.2</p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>11.9</p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>44.8%</p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.18%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>32.0%</p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width="15%" nowrap valign="top" style='width:15.34%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>Red </p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>14.1</p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>15.2</p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.16%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>53.8%</p>
+  </td>
+  <td width="21%" nowrap valign="top" style='width:21.18%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  page-break-after:avoid'>59.1%</p>
+  </td>
+ </tr>
+</table>
+</div>
 
 Speeds tend to increase with distance, and, for reasons identified above, speeds are lower for trips from Black or African American tracts. The difference is starkest for bus trips between 5.5 and 11km long, 13% of trips from Black or African American tracts, where the difference in speed can exceed 10km/hr, though the difference in average over the range is 7km/hr. This appears to be primarily due to a much greater need to transfer over those distances for commuters from Black or African American areas (Figure 5.24); 72% of trips require at least one transfer compared to only 22% of trips from White tracts. Additionally, a greater availability of faster express buses from White suburbs to the downtown core is also an important factor.
 
@@ -323,16 +966,554 @@ Average speeds are typically faster in the early morning and then slow as the da
 
 <span id="_Ref421046733" class="anchor"></span>Table 5.9 Speed (km/hr) by Time Period Hour, Mode, and Race
 
-| **Time period**                  | **Bus**   | **Mixed** | **Rail**  |
-|----------------------------------|-----------|-----------|-----------|
-|                                  | **Black** | **White** | **Black** |
-|                                  | **Speed** | **Trips** | **Speed** |
-| **Night/Sunrise \[12AM,6 AM)**   | 16.3      | 7.9%      | 19.1      |
-| **Early AM \[6 AM,7 AM)**                  | 14.0      | 13%       | 17.3      |
-| **AM Peak \[7 AM,9 AM)**                  | 11.9      | 35%       | 13.8      |
-| **Midday Base \[9 AM,13:30)**                 | 12.5      | 35%       | 14.3      |
-| **Midday School \[13:30,16:00)** | 11.7      | 8.0%      | 13.7      |
-| All                              | 12.7      | 14.5      | 11.9      |
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0"
+ style='margin-left:-4.75pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='height:15.0pt'>
+   <td nowrap rowspan="3" style='width:76.5pt;border:solid windowtext 1.0pt;
+   border-bottom:double windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt;
+   height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>&nbsp;</b></p>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>Time period</b></p>
+   </td>
+   <td nowrap colspan="4" style='width:131.9pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>Bus</b></p>
+   </td>
+   <td nowrap colspan="4" style='width:131.9pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>Mixed</b></p>
+   </td>
+   <td nowrap colspan="4" style='width:131.95pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>Rail</b></p>
+   </td>
+  </tr>
+  <tr style='height:15.0pt'>
+   <td nowrap colspan="2" style='width:65.95pt;border-top:none;
+   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>Black</b></p>
+   </td>
+   <td nowrap colspan="2" style='width:65.95pt;border-top:none;
+   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>White</b></p>
+   </td>
+   <td nowrap colspan="2" style='width:65.95pt;border-top:none;
+   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>Black</b></p>
+   </td>
+   <td nowrap colspan="2" style='width:65.95pt;border-top:none;
+   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>White</b></p>
+   </td>
+   <td nowrap colspan="2" style='width:65.95pt;border-top:none;
+   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>Black</b></p>
+   </td>
+   <td nowrap colspan="2" style='width:66.0pt;border-top:none;
+   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b>White</b></p>
+   </td>
+  </tr>
+  <tr style='height:15.0pt'>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Speed</span></b></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Trips</span></b></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Speed</span></b></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Trips</span></b></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Speed</span></b></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Trips</span></b></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Speed</span></b></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Trips</span></b></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Speed</span></b></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Trips</span></b></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Speed</span></b></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+   .0001pt;text-align:center;line-height:normal'><b><span style='font-size:
+   8.0pt'>Trips</span></b></p>
+   </td>
+  </tr>
+  <tr style='height:15.0pt'>
+   <td nowrap valign="bottom" style='width:76.5pt;border:solid windowtext 1.0pt;
+   border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+   color:black'>Night/Sunrise [12AM,6 AM)</span></b></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>16.3</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>7.9%</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>19.1</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>3.3%</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>13.2</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>9.5%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>14.4</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>5.0%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>12.6</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>5.4%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>16.0</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>4.1%</span></p>
+   </td>
+  </tr>
+  <tr style='height:15.0pt'>
+   <td nowrap valign="bottom" style='width:76.5pt;border:solid windowtext 1.0pt;
+   border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+   color:black'>Early AM </span></b></p>
+   <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+   color:black'>[6 AM,7 AM)</span></b></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>14.0</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>13%</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>17.3</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>11%</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>12.7</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>18%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>14.4</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>16%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>13.4</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>10%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>15.5</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>9.5%</span></p>
+   </td>
+  </tr>
+  <tr style='height:15.0pt'>
+   <td nowrap valign="bottom" style='width:76.5pt;border:solid windowtext 1.0pt;
+   border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+   color:black'>AM Peak </span></b></p>
+   <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+   color:black'>[7 AM,9 AM)</span></b></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>11.9</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>35%</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>13.8</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>53%</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>11.8</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>42%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>12.3</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>55%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>12.5</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>51%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>12.9</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>54%</span></p>
+   </td>
+  </tr>
+  <tr style='height:15.0pt'>
+   <td nowrap valign="bottom" style='width:76.5pt;border:solid windowtext 1.0pt;
+   border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+   color:black'>Midday Base </span></b></p>
+   <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+   color:black'>[9 AM,13:30)</span></b></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>12.5</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>35%</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>14.3</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>29%</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>11.4</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>25%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>12.1</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>21%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>11.9</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>29%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>11.9</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>29%</span></p>
+   </td>
+  </tr>
+  <tr style='height:15.0pt'>
+   <td nowrap valign="bottom" style='width:76.5pt;border-top:none;
+   border-left:solid windowtext 1.0pt;border-bottom:double windowtext 1.5pt;
+   border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+   line-height:normal'><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
+   color:black'>Midday School [13:30,16:00)</span></b></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>11.7</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>8.0%</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>13.7</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>5.0%</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>10.9</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>5.3%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>11.7</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>2.9%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>11.5</span></p>
+   </td>
+   <td nowrap style='width:32.95pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>5.1%</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>11.1</span></p>
+   </td>
+   <td nowrap style='width:33.0pt;border-top:none;border-left:none;
+   border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal"><span style='font-family:"Calibri","sans-serif";color:black'>4.1%</span></p>
+   </td>
+  </tr>
+  <tr style='height:15.0pt'>
+   <td nowrap valign="bottom" style='width:76.5pt;border:solid windowtext 1.0pt;
+   border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal" align="left" style='text-align:left'><span style='font-size:
+   11.0pt;font-family:"Calibri","sans-serif";color:black'>All</span></p>
+   </td>
+   <td nowrap colspan="2" valign="bottom" style='width:65.95pt;border-top:
+   none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:
+   solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal" align="center" style='text-align:center'><span
+   style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>12.7</span></p>
+   </td>
+   <td nowrap colspan="2" valign="bottom" style='width:65.95pt;border-top:
+   none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:
+   solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal" align="center" style='text-align:center'><span
+   style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>14.5</span></p>
+   </td>
+   <td nowrap colspan="2" valign="bottom" style='width:65.95pt;border-top:
+   none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:
+   solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal" align="center" style='text-align:center'><span
+   style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>11.9</span></p>
+   </td>
+   <td nowrap colspan="2" valign="bottom" style='width:65.95pt;border-top:
+   none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:
+   solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal" align="center" style='text-align:center'><span
+   style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>12.6</span></p>
+   </td>
+   <td nowrap colspan="2" valign="bottom" style='width:65.95pt;border-top:
+   none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:
+   solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal" align="center" style='text-align:center'><span
+   style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>12.4</span></p>
+   </td>
+   <td nowrap colspan="2" valign="bottom" style='width:66.0pt;border-top:
+   none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:
+   solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+   <p class="MsoNormal" align="center" style='text-align:center'><span
+   style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>12.8</span></p>
+   </td>
+  </tr>
+ </thead>
+</table>
+
 
 ![Figure 5-25](../images/media/image43.png)
 <span id="_Ref421045013" class="anchor"><span id="_Toc423368660" class="anchor"></span></span>Figure 5.25 Distribution of Start Times by Mode and Threshold
@@ -345,15 +1526,450 @@ The closing of the gap during the midday is due to a combination of the gap in R
 
 <span id="_Ref421190046" class="anchor"></span>Table 5.10 Average Heavy Rail Speeds (km/hr) for the Orange and Red Lines by Time of Day, Threshold, and Number of Segments
 
-| Time Period         | Black or African American | White Alone |
-|---------------|---------------------------|-------------|
-|               | Orange Line               | Red Line    |
-|               | Speed                     | %Trips      |
-| Sunrise       | 11.8                      | 37.5%       |
-| Early AM      | 12.2                      | 37.8%       |
-| AM Peak       | 11.6                      | 44.1%       |
-| Midday Base   | 11.1                      | 47.3%       |
-| Midday School | 10.7                      | 50.2%       |
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0"
+ style='width:449.75pt;border-collapse:collapse;border:none'>
+ <tr style='height:15.0pt'>
+  <td nowrap rowspan="3" style='width:49.95pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'>Time<br>
+  Period</p>
+  </td>
+  <td nowrap colspan="4" style='width:156.8pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'>Black or African
+  American</p>
+  </td>
+  <td nowrap colspan="6" style='width:243.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'>White Alone</p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td nowrap colspan="2" style='width:80.3pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'>Orange Line</p>
+  </td>
+  <td nowrap colspan="2" style='width:76.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'>Red Line</p>
+  </td>
+  <td nowrap colspan="2" style='width:79.35pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'>Green Line </p>
+  </td>
+  <td nowrap colspan="2" style='width:78.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'>Orange Line</p>
+  </td>
+  <td colspan="2" valign="top" style='width:84.8pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'>Red Line</p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td nowrap style='width:39.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'><span style='font-size:
+  8.5pt'>Speed</span></p>
+  </td>
+  <td nowrap style='width:41.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'><span style='font-size:
+  8.5pt'>%Trips</span></p>
+  </td>
+  <td nowrap style='width:.5in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'><span style='font-size:
+  8.5pt'>Speed</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'><span style='font-size:
+  8.5pt'>%Trips</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'><span style='font-size:
+  8.5pt'>Speed</span></p>
+  </td>
+  <td nowrap style='width:38.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'><span style='font-size:
+  8.0pt'>%Trips</span></p>
+  </td>
+  <td nowrap style='width:39.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'><span style='font-size:
+  8.5pt'>Speed</span></p>
+  </td>
+  <td nowrap style='width:39.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'><span style='font-size:
+  8.5pt'>%Trips</span></p>
+  </td>
+  <td style='width:.55in;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'><span style='font-size:
+  8.5pt'>Speed</span></p>
+  </td>
+  <td style='width:45.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;
+  height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='text-align:center'><span style='font-size:
+  8.5pt'>%Trips</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td nowrap valign="top" style='width:49.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+  color:black'>Sunrise</span></p>
+  </td>
+  <td nowrap style='width:39.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>11.8</span></p>
+  </td>
+  <td nowrap style='width:41.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>37.5%</span></p>
+  </td>
+  <td nowrap style='width:.5in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>13.1</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>62.2%</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>7.7</span></p>
+  </td>
+  <td nowrap style='width:38.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>3.6%</span></p>
+  </td>
+  <td nowrap style='width:39.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>12.3</span></p>
+  </td>
+  <td nowrap style='width:39.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>33.9%</span></p>
+  </td>
+  <td nowrap style='width:.55in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>18.5</span></p>
+  </td>
+  <td nowrap style='width:45.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>61.9%</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td nowrap valign="top" style='width:49.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+  color:black'>Early AM</span></p>
+  </td>
+  <td nowrap style='width:39.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>12.2</span></p>
+  </td>
+  <td nowrap style='width:41.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>37.8%</span></p>
+  </td>
+  <td nowrap style='width:.5in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>14.2</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>61.5%</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>7.8</span></p>
+  </td>
+  <td nowrap style='width:38.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>5.4%</span></p>
+  </td>
+  <td nowrap style='width:39.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>12.9</span></p>
+  </td>
+  <td nowrap style='width:39.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>34.6%</span></p>
+  </td>
+  <td nowrap style='width:.55in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>17.7</span></p>
+  </td>
+  <td nowrap style='width:45.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>59.6%</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td nowrap valign="top" style='width:49.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+  color:black'>AM Peak</span></p>
+  </td>
+  <td nowrap style='width:39.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>11.6</span></p>
+  </td>
+  <td nowrap style='width:41.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>44.1%</span></p>
+  </td>
+  <td nowrap style='width:.5in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>13.5</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>54.2%</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>7.5</span></p>
+  </td>
+  <td nowrap style='width:38.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>9.3%</span></p>
+  </td>
+  <td nowrap style='width:39.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>11.5</span></p>
+  </td>
+  <td nowrap style='width:39.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>32.5%</span></p>
+  </td>
+  <td nowrap style='width:.55in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>14.5</span></p>
+  </td>
+  <td nowrap style='width:45.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>57.9%</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td nowrap valign="top" style='width:49.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+  color:black'>Midday Base</span></p>
+  </td>
+  <td nowrap style='width:39.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>11.1</span></p>
+  </td>
+  <td nowrap style='width:41.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>47.3%</span></p>
+  </td>
+  <td nowrap style='width:.5in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>13.0</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>50.7%</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>7.0</span></p>
+  </td>
+  <td nowrap style='width:38.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>12.2%</span></p>
+  </td>
+  <td nowrap style='width:39.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>10.7</span></p>
+  </td>
+  <td nowrap style='width:39.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>31.3%</span></p>
+  </td>
+  <td nowrap style='width:.55in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>13.6</span></p>
+  </td>
+  <td nowrap style='width:45.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>56.1%</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td nowrap valign="top" style='width:49.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal"><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";
+  color:black'>Midday School</span></p>
+  </td>
+  <td nowrap style='width:39.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>10.7</span></p>
+  </td>
+  <td nowrap style='width:41.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>50.2%</span></p>
+  </td>
+  <td nowrap style='width:.5in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>12.5</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>47.8%</span></p>
+  </td>
+  <td nowrap style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>6.7</span></p>
+  </td>
+  <td nowrap style='width:38.85pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>15.6%</span></p>
+  </td>
+  <td nowrap style='width:39.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>10.5</span></p>
+  </td>
+  <td nowrap style='width:39.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>33.6%</span></p>
+  </td>
+  <td nowrap style='width:.55in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>12.8</span></p>
+  </td>
+  <td nowrap style='width:45.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNormal" align="right" style='text-align:right'><span
+  style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:black'>50.3%</span></p>
+  </td>
+ </tr>
+</table>
+
 
 All of the factors discussed above lead to the distributions of travel times by mode in Figure 5.26 below. Commuters from Black or African American tend to have both shorter and longer bus trips than those from White Alone tracts. The latter is due to medium-length trips being slower and requiring more transfers. For trips requiring a combination of bus and rail, the distribution of journey times is overall longer for commuters from Black tracts, again due to slower speeds and more transfers required. For rail trips, the middle of the distribution is shifted to the right for commuters from Black or African American tracts due to the relative speed of the Orange Line and Ashmont branch of the Red Line versus the trunk and Braintree branch of the Red Line. The next section, 5.4.3, will explore more specific areas for improvement based on these finding, leading to strategies to reduce these travel time differences that are suggested in section 5.6 below.
 
@@ -739,24 +2355,336 @@ Wait times were estimated for bus stages, which resulted in journey times in Tab
 Based on these findings, some recommendations were made and evaluated for interventions which could mitigate the 3.1 minute difference in average journey times which are summarized in Table 5.25. Given the high number of bus to bus transfers, interventions to reduce transfer times through regulating bus departures or by through-routing bus routes at the major transfer stations of Dudley Square and Forest Hills Station. Also suggested is the extension of the Silver Line Washington St. from Dudley Square to Grove Hall or further to Mattapan Square in order to provide a greater number of single-stage journeys for passengers. Additionally, increasing access to the Providence/Stoughton and Fairmount commuter rail lines with reduced fares should be further investigated.
 
 <span id="_Ref419838675" class="anchor"></span>Table 5.24 Journey Time and Speed by Mode and Threshold with Wait Times Included
-| **Mode**                       | **Bus**                   | **Mixed**   | **Rail**                  |
-|--------------------------------|---------------------------|-------------|---------------------------|
-| **Threshold**                  | Black or African American | White Alone | Black or African American |
-| **Average Speed (km/hr)**      | 7.9                       | 9.4         | 10.3                      |
-| **Average Journey Time (min)** | 26.8                      | 25.5        | 50.5                      |
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr style='height:15.0pt'>
+  <td width="21%" nowrap valign="top" style='width:21.8%;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-family:"Calibri","sans-serif"'>Mode</span></b></p>
+  </td>
+  <td width="26%" nowrap colspan="2" valign="top" style='width:26.08%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'><b><span style='font-family:
+  "Calibri","sans-serif"'>Bus</span></b></p>
+  </td>
+  <td width="26%" nowrap colspan="2" valign="top" style='width:26.08%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'><b><span style='font-family:
+  "Calibri","sans-serif"'>Mixed</span></b></p>
+  </td>
+  <td width="26%" colspan="2" valign="top" style='width:26.04%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="center" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'><b><span style='font-family:
+  "Calibri","sans-serif"'>Rail</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width="21%" nowrap valign="top" style='width:21.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-family:"Calibri","sans-serif"'>Threshold</span></b></p>
+  </td>
+  <td width="13%" valign="top" style='width:13.04%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-family:"Calibri","sans-serif"'>Black or
+  African American</span></p>
+  </td>
+  <td width="13%" valign="top" style='width:13.04%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-family:"Calibri","sans-serif"'>White
+  Alone</span></p>
+  </td>
+  <td width="13%"  valign="top" style='width:13.04%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-family:"Calibri","sans-serif"'>Black or
+  African American</span></p>
+  </td>
+  <td width="13%"  valign="top" style='width:13.04%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-family:"Calibri","sans-serif"'>White
+  Alone</span></p>
+  </td>
+  <td width="13%" valign="top" style='width:13.04%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-family:"Calibri","sans-serif";
+  color:black'>Black or African American</span></p>
+  </td>
+  <td width="13%" valign="top" style='width:13.0%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  line-height:normal'><span style='font-family:"Calibri","sans-serif";
+  color:black'>White Alone</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width="21%" nowrap valign="top" style='width:21.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-family:"Calibri","sans-serif"'>Average
+  Speed (km/hr)</span></b></p>
+  </td>
+  <td width="13%" nowrap style='width:13.04%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-family:"Calibri","sans-serif"'>7.9</span></p>
+  </td>
+  <td width="13%" nowrap style='width:13.04%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-family:"Calibri","sans-serif"'>9.4</span></p>
+  </td>
+  <td width="13%" nowrap style='width:13.04%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-family:"Calibri","sans-serif"'>10.3</span></p>
+  </td>
+  <td width="13%" nowrap style='width:13.04%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-family:"Calibri","sans-serif"'>10.8</span></p>
+  </td>
+  <td width="13%" style='width:13.04%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-size:11.0pt;
+  font-family:"Calibri","sans-serif";color:black'>12.4</span></p>
+  </td>
+  <td width="13%" style='width:13.0%;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-size:11.0pt;
+  font-family:"Calibri","sans-serif";color:black'>12.8</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width="21%" nowrap valign="top" style='width:21.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" style='margin-bottom:0in;margin-bottom:.0001pt;
+  line-height:normal'><b><span style='font-family:"Calibri","sans-serif"'>Average
+  Journey Time (min)</span></b></p>
+  </td>
+  <td width="13%" nowrap valign="top" style='width:13.04%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-family:"Calibri","sans-serif"'>26.8</span></p>
+  </td>
+  <td width="13%" nowrap valign="top" style='width:13.04%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-family:"Calibri","sans-serif"'>25.5</span></p>
+  </td>
+  <td width="13%" nowrap valign="top" style='width:13.04%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-family:"Calibri","sans-serif"'>50.5</span></p>
+  </td>
+  <td width="13%" nowrap valign="top" style='width:13.04%;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-family:"Calibri","sans-serif"'>48.1</span></p>
+  </td>
+  <td width="13%" valign="top" style='width:13.04%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-size:11.0pt;
+  font-family:"Calibri","sans-serif";color:black'>27.3</span></p>
+  </td>
+  <td width="13%" valign="top" style='width:13.0%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
+  <p class="MsoNoSpacing" align="right" style='margin-bottom:0in;margin-bottom:
+  .0001pt;text-align:right;line-height:normal'><span style='font-size:11.0pt;
+  font-family:"Calibri","sans-serif";color:black'>25.4</span></p>
+  </td>
+ </tr>
+</table>
 
 The greatest potential travel time benefit for commuters from Black tracts would come from increasing frequencies and speeds on the Fairmount Line by introducing DMUs. This was investigated in disaggregate for users who could walk to and from the Fairmount Line in order to complete their journeys. For those individuals, journey times for those who switched to the Fairmount decreased by an average of 13.5 minutes, primarily trips that involved transferring from bus to rail, leading to an estimated reduction in the travel time difference of 10%. These benefits were extrapolated to those who could walk to a Fairmount Station and whose destinations were well-served by a transfer at South Station. Considering all trips which begin within walking distance of a Fairmount Station leads to an estimated reduction of up to 25% of the current travel time difference. Because the walk-only trips represent only a portion of the trips which could benefit from the Fairmount Line, their benefits were also extrapolated in aggregate for other trips that would use intersecting bus lines and could benefit from transferring to the Fairmount Line. This led to the upper bound of estimated potential travel time difference reduction of 35%.
 
-<span id="_Ref421265217" class="anchor"></span>Table 5.25 Summary of Potential Solutions
-|                        | Potential Solution                                                | Potential Impact on Travel Time Difference (% of Current Gap) | Comments                                                                                                 |
-|------------------------|-------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Operations             | Improve Bus Departure Reliability at Dudley and Forest Hills      | 2%                                                            | Doesn’t include wait time reductions for users starting journeys at those stations.                      |
-|                        | Through-routing most Heavily Used Bus Route Pairs                 | 0.3%-1.0% per route                                           |                                                                                                          |
-| Fare                   | Reduce Commuter Rail Fares at Hyde Park                           | Further analysis required                                     |                                                                                                          |
-| Capital Improvements   | *Rapid Transit Frequencies on the Fairmount Line*                 | *25-35%*                                                      | *Use of a network model to examine all disaggregate benefits to users who could use the line required. * |
-|                        | Increase Heavy Rail Frequencies on Orange Line and Ashmont Branch | Further analysis required                                     |                                                                                                          |
-|                        | Reconfigure Bus Network                                           | Further analysis required                                     | Examine bus speed improvements from BRT                                                                  
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                              Examine benefits from reorganizing bus network to reduce transfers                                        |
+<span id="_Ref421265217" class="anchor"></span>Table 5.25 Summary of Potential Solutions  
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0"
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td valign="top" style='width:35.75pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  </td>
+  <td vtyle='width:135.0pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Potential Solution</p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Potential Impact on Travel
+  Time Difference (% of Current Gap)</p>
+  </td>
+  <td vtyle='width:184.25pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Comments</p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan="2" style='width:35.75pt;border-top:none;border-left:solid windowtext 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="center" style='margin-top:0in;margin-right:5.65pt;
+  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'>Operations</p>
+  </td>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Improve Bus Departure
+  Reliability at Dudley and Forest Hills</p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal">2%</p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Doesn’t include wait time
+  reductions for users starting journeys at those stations.</p>
+  </td>
+ </tr>
+ <tr style='height:37.3pt'>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:37.3pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Through-routing most
+  Heavily Used Bus Route Pairs</p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:37.3pt'>
+  <p class="MsoNormal">0.3%-1.0% per route</p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:37.3pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid;height:39.55pt'>
+  <td vtyle='width:35.75pt;border-top:none;border-left:solid windowtext 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
+  <p class="MsoNormal" align="center" style='margin-top:0in;margin-right:5.65pt;
+  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'>Fare</p>
+  </td>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Reduce Commuter Rail Fares
+  at Hyde Park</p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
+  <p class="MsoNormal">Further analysis required</p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan="3" style='width:35.75pt;border-top:none;border-left:solid windowtext 1.0pt;
+  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="center" style='margin-top:0in;margin-right:5.65pt;
+  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'>Capital
+  Improvements</p>
+  </td>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'><u>Rapid Transit
+  Frequencies on the Fairmount Line</u></p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal"><u>25-35%</u></p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'><u>Use of a network model
+  to examine all disaggregate benefits to users who could use the line
+  required. </u></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Increase Heavy Rail
+  Frequencies on Orange Line and Ashmont Branch</p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal">Further analysis required</p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top" style='width:135.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Reconfigure Bus Network </p>
+  </td>
+  <td valign="top" style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal">Further analysis required</p>
+  </td>
+  <td valign="top" style='width:184.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class="MsoNormal" align="left" style='text-align:left'>Examine bus speed
+  improvements from BRT<br>
+  Examine benefits from reorganizing bus network to reduce transfers</p>
+  </td>
+ </tr>
+</table>
 
 Given the magnitude of the potential benefits, and the assumptions required to estimating them, a fully disaggregated analysis of the benefits is recommended. This would require a model of the new transit network with a shortest-path routing algorithm to reassign users to shorter trips using the Fairmount and should consider changing trip patterns from increased accessibility as well as economic growth in nearby areas such as the Seaport District.
