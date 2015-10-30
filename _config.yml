@@ -1,6 +1,6 @@
 title:            "Analyzing Transit Equity Using Automatically Collected Data"
 description:      ""
-logo:             logo.png
+logo:             "apple-touch-icon-152x152.png"
 #disqus_shortname: hmfaysal
 share:            true
 dropcap:			true
@@ -153,7 +153,7 @@ prose:
         field:
           element: "checkbox"
           label: "MathJax"
-          value: false
+          value: true
       - name: "featured"
         field:
           element: "checkbox"
