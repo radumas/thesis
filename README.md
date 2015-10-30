@@ -82,7 +82,10 @@ The `mathjax` flag should convert equations to MathJax for display
 
         pandoc -f docx -t markdown_github -o index.md --mathjax --extract-media=images Thesis.docx
         
-Most headers had to be manually modified since, I think, Word also thought of them as lists. Pandoc converted a number of headers with `<span>` and `<anchor>` tags, I think with a table of contents in mind. So these were manually removed, and the headings properly formatted. MathJax equations had to be surrounded by `<div>` or `<span>` [tags](http://stackoverflow.com/questions/10987992/using-mathjax-with-jekyll). Tables with complex formatting have to be reformatted. Numbered and unordered lists had to be tweaked slightly using gedit.
+Most headers had to be manually modified since, I think, Word also thought of them as lists. Pandoc converted a number of headers with `<span>` and `<anchor>` tags, I think with a table of contents in mind. So these were manually removed, and the headings properly formatted. MathJax equations had to be surrounded by `<div>` or `<span>` [tags](http://stackoverflow.com/questions/10987992/using-mathjax-with-jekyll). 
+Tables with complex formatting did not survive conversion from `.docx` to `.md`, nor do they survive conversion to `html` in pandoc. I extracted the tables and saved them in word as `.htm` using the option "Web Page, Filtered". This produces some heavy (with repeated properties) and unreadable code, but it displays.... sort of. I had to make sure that numbered formatting values in the tags were quoted, and removed width declarations that didn't include a percentage (e.g. "width=400"). 
+
+Numbered and unordered lists had to be tweaked slightly using gedit.
 
 3.  Build site with `bundle exec jekyll build`
 
@@ -93,7 +96,7 @@ Most headers had to be manually modified since, I think, Word also thought of th
     git push origin gh-pages
     ```
 
-5. While the Code for America Annual Report is a beautiful webpage, it doesn't really follow the principles of Jekyll terribly closely, i.e., most sections are individually styled, which leads to more editing of SASS than I would've wanted, so I'm switching to this theme shortly https://github.com/hmfaysal/Notepad/
+5. While the Code for America Annual Report is a beautiful webpage, it doesn't really follow the principles of Jekyll terribly closely, i.e., most sections are individually styled, which leads to more editing of SASS than I would've wanted, so I used the [Notepad theme](https://github.com/hmfaysal/Notepad/)
 
 Can add `reversed` to the liquid loops `{% for p in site.posts reversed %}` to display posts in order to display them in chronological order of their filenames, which makes working with the files less of a hassle.
 
@@ -104,12 +107,12 @@ Can add `reversed` to the liquid loops `{% for p in site.posts reversed %}` to d
 - [ ] Link to about page
 - [x] Find missing images
 - [ ] Equation 42 temporarily deleted so jekyll will build properly. Need to fix MathJax notation
-- [ ] Fix Table 5.7
-- [ ] Fix Table 5.8
-- [ ] Fix Table 5.9
-- [ ] Fix Table 5.10
-- [ ] Fix Table 5.25
-- [ ] Fix Table 6.3
+- [x] Fix Table 5.7
+- [x] Fix Table 5.8
+- [x] Fix Table 5.9
+- [x] Fix Table 5.10
+- [x] Fix Table 5.25
+- [x] Fix Table 6.3
 - [ ] Add links to other theses
 - [ ] Format citations somehow
 - [ ] Footnotes are at the end
