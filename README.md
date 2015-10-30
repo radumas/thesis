@@ -76,7 +76,9 @@ gem 'github-pages'
 ```
   then installing with `bundle install`
      
-2.  Convert thesis from `docx` to `markdown` using pandoc. This extracts images from the thesis to a [folder](https://github.com/jgm/pandoc/issues/1986). Chapter titles were not rendered with the header markdown, but these will become individual posts so it didn't matter. Not all images were extracted, since some were excel graphs that weren't images. The `mathjax` flag should convert equations to MathJax for display
+2.  Convert thesis from `docx` to `markdown` using pandoc. This extracts images from the thesis to a [folder](https://github.com/jgm/pandoc/issues/1986). Chapter titles were not rendered with the header markdown, but these will become individual posts so it didn't matter. Not all images were extracted, since some were excel graphs that weren't images. I just screenshot those from the pdf into `.png` files and added the links.
+
+The `mathjax` flag should convert equations to MathJax for display
 
         pandoc -f docx -t markdown_github -o index.md --mathjax --extract-media=images Thesis.docx
         
@@ -100,7 +102,7 @@ Can add `reversed` to the liquid loops `{% for p in site.posts reversed %}` to d
 - [x] Split Chapters into posts
 - [ ] Add MBTA & NSERC logos to acknowledgements
 - [ ] Link to about page
-- [ ] Find missing images
+- [x] Find missing images
 - [ ] Equation 42 temporarily deleted so jekyll will build properly. Need to fix MathJax notation
 - [ ] Fix Table 5.7
 - [ ] Fix Table 5.8
@@ -108,7 +110,7 @@ Can add `reversed` to the liquid loops `{% for p in site.posts reversed %}` to d
 - [ ] Fix Table 5.10
 - [ ] Fix Table 5.25
 - [ ] Fix Table 6.3
-- [ ] Make the thing lay-person readable
 - [ ] Add links to other theses
 - [ ] Format citations somehow
 - [ ] Footnotes are at the end
+- [ ] Make the thing lay-person readable
