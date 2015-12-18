@@ -13,20 +13,17 @@ baseurl:          "/thesis"
 # Owner/author information
 owner:
   name:           Raphael Dumas
-  avatar:         
+  avatar:         avatar.jpg
   email:          radumas@alum.mit.edu
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Planner/engineer working on sustainable transportation
+  description:    "Planner/engineer working on sustainable transportation.<br>See more of my work <a href='https://radumas.info'>here</a>"
   # Social networking links used in footer. Update and remove as you like.
   twitter:        dumasraphael
   #facebook:       hmfaysal
   github:         radumas  
   linkedin_link: https://linkedin.com/in/DumasRaphael
-  stackoverflow_link: http://gis.stackexchange.com/users/36886/raphael
-  #instagram:      hmfaysal
-  # For Google Authorship https://plus.google.com/authorship
-  #google_plus:    https://plus.google.com/u/0/102602916593522619858
-
+  stackoverflow_link: https://stackexchange.com/users/5017618/raphael
+  
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   UA-39365944-7
 #google_verify:      
@@ -56,7 +53,7 @@ links:
     url: /Conclusion
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Dhaka
+timezone:    America/New_York
 future:      true
 highlighter: pygments
 markdown:    kramdown
