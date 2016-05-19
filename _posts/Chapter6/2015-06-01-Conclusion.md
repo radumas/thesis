@@ -72,159 +72,159 @@ Based on these findings, some recommendations were made and evaluated for interv
 
 <span id="_Ref421266786" class="anchor"></span>Table 6.3 Summary of Potential Solutions
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0"
- style='border-collapse:collapse;border:none'>
+<table>
+ 
  <tr>
-  <td valign="top" style='width:35.75pt;border:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  <td >
+  
+  &nbsp;
   </td>
-  <td vtyle='width:135.0pt;border-top:solid windowtext 1.0pt;
-  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>Potential Solution</p>
+  <td >
+  
+  
+  <b>Potential Solution</b>
   </td>
-  <td valign="top" style='width:112.5pt;border-top:solid windowtext 1.0pt;
-  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>Potential Impact on Travel
-  Time Difference (% of Current Gap)</p>
+  <td >
+  
+  <b>
+  Potential Impact on Travel
+  Time Difference (% of Current Gap)</b>
   </td>
-  <td vtyle='width:184.25pt;border-top:solid windowtext 1.0pt;
-  border-left:none;border-bottom:double windowtext 1.5pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>Comments</p>
-  </td>
- </tr>
- <tr>
-  <td rowspan="2" style='width:35.75pt;border-top:none;border-left:solid windowtext 1.0pt;
-  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="center" style='margin-top:0in;margin-right:5.65pt;
-  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'>Operations</p>
-  </td>
-  <td valign="top" style='width:135.0pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>Improve Bus Departure
-  Reliability at Dudley and Forest Hills</p>
-  </td>
-  <td valign="top" style='width:112.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal">2%</p>
-  </td>
-  <td valign="top" style='width:184.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>Doesn’t include wait time
-  reductions for users starting journeys at those stations.</p>
-  </td>
- </tr>
- <tr style='height:37.3pt'>
-  <td valign="top" style='width:135.0pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:37.3pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>Through-routing most
-  Heavily Used Bus Route Pairs</p>
-  </td>
-  <td valign="top" style='width:112.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:37.3pt'>
-  <p class="MsoNormal">0.3%-1.0% per route</p>
-  </td>
-  <td valign="top" style='width:184.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:37.3pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
-  </td>
- </tr>
- <tr style='page-break-inside:avoid;height:39.55pt'>
-  <td vtyle='width:35.75pt;border-top:none;border-left:solid windowtext 1.0pt;
-  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
-  <p class="MsoNormal" align="center" style='margin-top:0in;margin-right:5.65pt;
-  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'>Fare</p>
-  </td>
-  <td valign="top" style='width:135.0pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>Reduce Commuter Rail Fares
-  at Hyde Park</p>
-  </td>
-  <td valign="top" style='width:112.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
-  <p class="MsoNormal">Further analysis required</p>
-  </td>
-  <td valign="top" style='width:184.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:39.55pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  <td >
+  
+  <b>
+  Comments</b>
   </td>
  </tr>
  <tr>
-  <td rowspan="3" style='width:35.75pt;border-top:none;border-left:solid windowtext 1.0pt;
-  border-bottom:solid windowtext 1.0pt;border-right:double windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="center" style='margin-top:0in;margin-right:5.65pt;
-  margin-bottom:0in;margin-left:5.65pt;margin-bottom:.0001pt;text-align:center'>Capital
-  Improvements</p>
+  <td rowspan="2" valign="center">
+  
+  
+  
+  Operations
   </td>
-  <td valign="top" style='width:135.0pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'><u>Rapid Transit
-  Frequencies on the Fairmount Line</u></p>
+  <td >
+  
+  
+  Improve Bus Departure
+  Reliability at Dudley and Forest Hills
   </td>
-  <td valign="top" style='width:112.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal"><u>25-35%</u></p>
+  <td >
+  
+  
+  2%
   </td>
-  <td valign="top" style='width:184.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'><u>Use of a network model
+  <td >
+  
+  
+  Doesn’t include wait time
+  reductions for users starting journeys at those stations.
+  </td>
+ </tr>
+ <tr>
+  <td >
+  
+  
+  Through-routing most
+  Heavily Used Bus Route Pairs
+  </td>
+  <td >
+  
+  
+  0.3%-1.0% per route
+  </td>
+  <td >
+  
+  
+  &nbsp;
+  </td>
+ </tr>
+ <tr>
+  <td >
+  
+  
+  
+  Fare
+  </td>
+  <td >
+  
+  
+  Reduce Commuter Rail Fares
+  at Hyde Park
+  </td>
+  <td >
+  
+  
+  Further analysis required
+  </td>
+  <td >
+  
+  
+  &nbsp;
+  </td>
+ </tr>
+ <tr>
+  <td rowspan="3" >
+  
+  
+  
+  Capital
+  Improvements
+  </td>
+  <td >
+  
+  
+  <u>Rapid Transit
+  Frequencies on the Fairmount Line</u>
+  </td>
+  <td >
+  
+  
+  <u>25-35%</u>
+  </td>
+  <td >
+  
+  
+  <u>Use of a network model
   to examine all disaggregate benefits to users who could use the line
-  required. </u></p>
+  required. </u>
   </td>
  </tr>
  <tr>
-  <td valign="top" style='width:135.0pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>Increase Heavy Rail
-  Frequencies on Orange Line and Ashmont Branch</p>
+  <td >
+  
+  
+  Increase Heavy Rail
+  Frequencies on Orange Line and Ashmont Branch
   </td>
-  <td valign="top" style='width:112.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal">Further analysis required</p>
+  <td >
+  
+  
+  Further analysis required
   </td>
-  <td valign="top" style='width:184.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>&nbsp;</p>
+  <td >
+  
+  
+  &nbsp;
   </td>
  </tr>
  <tr>
-  <td valign="top" style='width:135.0pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>Reconfigure Bus Network </p>
+  <td >
+  
+  
+  Reconfigure Bus Network 
   </td>
-  <td valign="top" style='width:112.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal">Further analysis required</p>
+  <td >
+  
+  
+  Further analysis required
   </td>
-  <td valign="top" style='width:184.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class="MsoNormal" align="left" style='text-align:left'>Examine bus speed
+  <td >
+  
+  
+  Examine bus speed
   improvements from BRT<br>
-  Examine benefits from reorganizing bus network to reduce transfers</p>
+  Examine benefits from reorganizing bus network to reduce transfers
   </td>
  </tr>
 </table>
