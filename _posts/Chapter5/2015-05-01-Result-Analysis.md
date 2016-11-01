@@ -254,11 +254,11 @@ Third, it is possible that the ACS data are simply inaccurately over-reported or
 
 <span id="_Ref421614159" class="anchor"></span>Table 5.6 Average Journey Time Comparison between AFC and ACS (Williams, Pollack, & Billingham, 2014) Data
 
-<table><tr><td>**Race**</td><td colspan="3">**Black**</td><td colspan="3">**White**</td></tr>
-<tr><td>**Mode**</td><td>**Bus only**</td><td>**Rail only**</td><td>**All Trips**</td><td>**Bus only**</td><td>**Rail only**</td><td>**All Trips**</td></tr>
-<tr><td>**Journey Time (min)**</td><td>26.8</td><td>27.3</td><td>**32.6**</td><td>25.5</td><td>25.4</td><td>**29.5**</td></tr>
-<tr><td>**Journey Time (min)**</td><td>47.1</td><td>44.2</td><td>**45.9**</td><td>38.7</td><td>40.8</td><td>**40.1**</td></tr>
-</table>
+| **Threshold**               | **Black**  | **White**  |
+|-----------------------------|------------|------------|
+| **Mode**                    | **Bus**    | **Rail**   |
+| **AFC Journey Time (min)** | 26.8       | 27.3       |
+| **ACS Journey Time (min)** | 47.1       | 44.2       |
 
 Nevertheless, across modes the AFC data show that commuters from Black or African American tracts have slightly longer average commute times than the White Alone population, despite shorter average distances. For reference, the travel times from White tracts are 91.4% those of Black ones. This ratio is higher than the 80% rule that CTPS uses with the FTA’s approval to determine impacts. Therefore these results do not trigger a call to mitigate these differences per the regulation. However, subsequent sections demonstrate the value of inferred OD in highlighting areas of operations where interventions might be effective in reducing this gap.
 
@@ -1892,7 +1892,7 @@ This chapter has demonstrated an application of 21 weekdays of OD data to analyz
 
 Based on the sensitivity analysis, thresholds of 40% Black or African American and 70% White Alone were chosen for respective samples for a more in-depth analysis. There is a persistent difference in travel time and speed (Table 5.23), though differences in travel time are not as great as those previously reported for the Boston Metropolitan Area (Williams et al., 2014). There is a far greater need for commuters in Black or African tracts to transfer to complete trips over similar distances to commuters from White Alone tracts, resulting in lower average speeds. This results in trips that take longer for rail and the combination of bus and rail, despite shorter average travel distances. It also leads to substantially lower speeds and longer trips for bus trips between 6 and 11km, 13% of trips from Black tracts. Shorter bus trips, the bulk of bus trips, have no difference in average speeds.
 
-<span id="_Ref419838300" class="anchor"></span>Table 5.23 Average Journey Characteristics by Mode and Black-White Home Location
+<span id="_Ref419838300" class="anchor"></span>Table 5.23 Average Journey Characteristics by Mode and Black-White Home Location  
 | Mode                                | Bus                       | Mixed       | Rail                      |
 |-------------------------------------|---------------------------|-------------|---------------------------|
 | Threshold                           | Black or African American | White Alone | Black or African American |
