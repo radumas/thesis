@@ -254,11 +254,11 @@ Third, it is possible that the ACS data are simply inaccurately over-reported or
 
 <span id="_Ref421614159" class="anchor"></span>Table 5.6 Average Journey Time Comparison between AFC and ACS (Williams, Pollack, & Billingham, 2014) Data
 
-| **Threshold**               | **Black**  | **White**  |
-|-----------------------------|------------|------------|
-| **Mode**                    | **Bus**    | **Rail**   |
-| **AFC Journey Time (min)** | 26.8       | 27.3       |
-| **ACS Journey Time (min)** | 47.1       | 44.2       |
+<table><tr><td>**Race**</td><td colspan="3">**Black**</td><td colspan="3">**White**</td></tr>
+<tr><td>**Mode**</td><td>**Bus only**</td><td>**Rail only**</td><td>**All Trips**</td><td>**Bus only**</td><td>**Rail only**</td><td>**All Trips**</td></tr>
+<tr><td>**Journey Time (min)**</td><td>26.8</td><td>27.3</td><td>**32.6**</td><td>25.5</td><td>25.4</td><td>**29.5**</td></tr>
+<tr><td>**Journey Time (min)**</td><td>47.1</td><td>44.2</td><td>**45.9**</td><td>38.7</td><td>40.8</td><td>**40.1**</td></tr>
+</table>
 
 Nevertheless, across modes the AFC data show that commuters from Black or African American tracts have slightly longer average commute times than the White Alone population, despite shorter average distances. For reference, the travel times from White tracts are 91.4% those of Black ones. This ratio is higher than the 80% rule that CTPS uses with the FTA’s approval to determine impacts. Therefore these results do not trigger a call to mitigate these differences per the regulation. However, subsequent sections demonstrate the value of inferred OD in highlighting areas of operations where interventions might be effective in reducing this gap.
 
