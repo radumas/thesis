@@ -1850,11 +1850,12 @@ The results for the three types of trips are in Table 5.22 below. The aggregate 
 
 <span id="_Ref421789725" class="anchor"></span>Table 5.22 Travel Time Benefits from Switching to the Fairmount Line by Trip Type
 
-| Trip Type                                                  | Average Time Saved (min) | Proportion of all Trips Switching to Fairmount | Impact on Travel Time Differential |
-|------------------------------------------------------------|--------------------------|------------------------------------------------|------------------------------------|
-| Home location within walking distance of Fairmount Line Destination requiring a transfer at South Station           | 12.4                     | 4.0%                                           | 16%                                |
-| Origin on a bus route intersecting with the Fairmount Line Destination requiring a transfer at South Station           | 12.2                     | 1.3%                                           | 5.2%                               |
-| Origin on a bus route intersecting with the Fairmount Line Destination within walking distance of Fairmount Line       | 12.1                     | 0.8%                                           | 3.2%                               |
+| Trip Type | Average Time Saved (min) | Number of Morning Trips that Might Switch to Fairmount (% of all Black Trips) | Impact on Travel Time Differential |
+|-----------|--------------------------|------------------------------------------------|------------------------------------|
+| Origin and Destination within walking distance of Fairmount Line                                                    | 13.4  | 4900 (2.5%) | 10%  |
+| Home location within walking distance of Fairmount Line Destination requiring a transfer at South Station           | 12.4  | 7900 (4.0%) | 16%  |
+| Origin on a bus route intersecting with the Fairmount Line Destination requiring a transfer at South Station        | 12.2  | 2600 (1.3%) | 5.2% |
+| Origin on a bus route intersecting with the Fairmount Line Destination within walking distance of Fairmount Line    | 12.1  | 1600 (0.8%) | 3.2% |
 
 ![Figure 5-32]({{ site.baseurl }}/images/media/image50.png)  
 <span id="_Ref421780350" class="anchor"><span id="_Toc423368667" class="anchor"></span></span>Figure 5.32 Map of Destination Area for Which Transferring to Fairmount Line Might Provide Travel TIme Benefits
