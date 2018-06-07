@@ -1,5 +1,7 @@
-#Analyzing Transit Equity Using Automatically Collected Data
-##Abstract
+# Analyzing Transit Equity Using Automatically Collected Data
+
+## Abstract
+
 By inferring individual passengers’ origins, destinations, and transfers using automatically
 collected transit data, transit providers can obtain and analyze larger volumes of information,
 with more accuracy, and at more frequent intervals than are available through traditional origin-
@@ -32,9 +34,11 @@ _Research Associate of Civil and Environmental Engineering_
 _Senior Lecturer of Civil and Environmental Engineering_  
 
 # Web-version of Master's Thesis
+
 Publishing the thesis for my dual Master's at MIT in Tranportation and City Planning in a  more accesible format while testing some web programming. I'm using [jekyll](http://jekyllrb.com) on a machine running `Ubuntu 14.04` for this project. This is **work in progress**, which you can see [here](https://radumas.github.io/thesis). Until the libraries host the pdf, you can find that [here](https://radumas.github.io/thesis/raw_thesis/Thesis Final.pdf) (16MB pdf). 
 
 ## Workflow
+
 1. [Install Jekyll](https://help.github.com/articles/using-jekyll-with-pages/). In `Ubuntu 14.04` this required installing `ruby 2.2.2` using the [gorails guide](https://gorails.com/setup/ubuntu/14.04) and the `rbenv` method. First installing dependencies
 
         sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
@@ -101,7 +105,8 @@ Numbered and unordered lists had to be tweaked slightly using gedit.
 Can add `reversed` to the liquid loops `{% for p in site.posts reversed %}` to display posts in order to display them in chronological order of their filenames, which makes working with the files less of a hassle.
 
 
-##TODO
+## TODO
+
 - [x] Split Chapters into posts
 - [ ] Add MBTA & NSERC logos to acknowledgements
 - [ ] Link to about page
